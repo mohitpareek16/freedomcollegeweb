@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Admissions Process - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Lato:wght@300;400;700;900&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: "#0A1F44",
+                            deep: "#08182E",
+                        },
+                        gold: {
+                            DEFAULT: "#D4AF37",
+                            light: "#E8C971",
+                        },
+                        teal: {
+                            DEFAULT: "#1FA2A8",
+                        },
+                        // The user request mentions F7F9FC as the light background
+                        // but the original homepage uses cream (#FAF9F6) and light (#F5F5F0).
+                        // I will use cream and the new light background color for consistency and variety.
+                        cream: "#FAF9F6",
+                        lightbg: "#F7F9FC",
+                        light: "#F5F5F0",
+                        text: {
+                            primary: "#2B2B2B",
+                            secondary: "#5A5A5A",
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-shadow-lg {
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans selection:bg-gold selection:text-white">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty &amp; Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+    <header
+        class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4 group" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College of Excellence Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1
+                            class="font-serif text-navy text-xl font-bold tracking-tight leading-none group-hover:text-navy-deep transition-colors">
+                            FREEDOM COLLEGE</h1>
+                        <span class="font-display text-text-secondary text-sm italic tracking-wide">of Excellence</span>
+                    </div>
+                </a>
+                <nav class="hidden xl:flex items-center gap-10">
+                    <a class="text-navy hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors"
+                        href="#">Academics</a>
+                    <a class="text-gold hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors"
+                        href="#">Admissions</a>
+                    <a class="text-navy hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors"
+                        href="#">Research</a>
+                    <a class="text-navy hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors"
+                        href="#">Campus Life</a>
+                    <a class="text-navy hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors"
+                        href="#">About</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-4">
+                    <button
+                        class="flex items-center gap-2 text-navy hover:text-teal font-bold text-sm px-4 py-2 transition-colors">
+                        <span class="material-symbols-outlined text-lg">search</span>
+                    </button>
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all duration-300"
+                        href="#">
+                        Request Info
+                    </a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md hover:shadow-lg transition-all duration-300"
+                        href="#">
+                        Apply Now
+                    </a>
+                </div>
+                <button class="xl:hidden text-navy">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative bg-navy-deep min-h-[50vh] flex items-center justify-center">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjSkkfMz_m-JhPCycTDdNRCfToqolUon04VZHsFFPUDrOoAVETPp41yTrRtTZulMnnqBRCvvHYAxKf-2SdBLDAZxj9PNnf13zkRE0wjFHQHPtTG3-BSc6EQe--qS-oYazxpi0dmwpqQSEGUx5OrZhWmGPOT97suUTQD3jsEnxIsWvWXoxqZf-7sTpaPFLkJXSuqF4USewy4xbGGief5dOGHQzjmAlf3H9mwlfjGW-lA8Vuv0wtpi1HmxmBKrnwaUkOkgBcT5BCrk8');">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/80 to-transparent"></div>
+            <div class="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full text-white pt-24 pb-16">
+                <div class="max-w-4xl">
+                    <nav class="text-sm font-sans mb-4">
+                        <ol class="flex items-center gap-2 text-white/70">
+                            <li><a class="hover:text-gold" href="#">Home</a></li>
+                            <li><span class="text-white/40">/</span></li>
+                            <li class="font-semibold text-white">Admissions Process</li>
+                        </ol>
+                    </nav>
+                    <h1 class="text-5xl md:text-6xl font-serif font-bold text-shadow-lg">Admissions Process</h1>
+                    <p class="mt-4 text-xl md:text-2xl font-display italic text-gold-light text-shadow">Your Journey to
+                        Excellence Starts Here</p>
+                </div>
+            </div>
+        </section>
+        <div class="bg-lightbg py-24 lg:py-32">
+            <div class="max-w-[1400px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+                <div class="lg:col-span-8">
+                    <article
+                        class="prose prose-lg max-w-none prose-h2:font-serif prose-h2:text-navy prose-h3:font-serif prose-h3:text-navy prose-h3:text-2xl prose-p:text-text-secondary prose-p:leading-relaxed prose-li:text-text-secondary">
+                        <section class="pb-12 border-b border-gray-200" id="policy">
+                            <h2 class="text-4xl">Undergraduate Admissions Policy</h2>
+                            <h3>Purpose</h3>
+                            <p>This policy outlines the principles, requirements, and procedures governing undergraduate
+                                admissions to Freedom College of Excellence. Our goal is to recruit, admit, and enroll a
+                                diverse and talented student body poised to contribute to and benefit from the College’s
+                                unique academic environment.</p>
+                            <h3>Policy Statement</h3>
+                            <p>Freedom College of Excellence is committed to a holistic review process that evaluates
+                                each applicant's academic achievements, intellectual curiosity, personal character, and
+                                potential for growth. We seek students who demonstrate a commitment to academic
+                                excellence, ethical leadership, and a spirit of inquiry, consistent with the College’s
+                                mission.</p>
+                        </section>
+                        <section class="py-12 border-b border-gray-200" id="requirements">
+                            <h2 class="text-4xl mt-0">General Admissions Requirements</h2>
+                            <p>All applicants for undergraduate admission must meet the minimum requirements outlined
+                                below to be considered. For questions, please contact the Office of Undergraduate
+                                Admission.</p>
+                            <h3 class="mt-12">Application Procedure</h3>
+                            <ol class="space-y-6 list-none p-0">
+                                <li class="flex items-start gap-6">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-navy text-white flex items-center justify-center font-serif text-2xl font-bold">
+                                        1</div>
+                                    <div>
+                                        <h4 class="font-serif text-xl text-navy m-0">Application Completion</h4>
+                                        <p class="m-0 mt-1">Submit the Freedom College Application or the Common
+                                            Application online, including the application fee or fee waiver request.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-6">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-navy text-white flex items-center justify-center font-serif text-2xl font-bold">
+                                        2</div>
+                                    <div>
+                                        <h4 class="font-serif text-xl text-navy m-0">Transcript Requests</h4>
+                                        <p class="m-0 mt-1">Provide official transcripts from all secondary and
+                                            post-secondary institutions attended.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-6">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-navy text-white flex items-center justify-center font-serif text-2xl font-bold">
+                                        3</div>
+                                    <div>
+                                        <h4 class="font-serif text-xl text-navy m-0">Entrance Evaluation</h4>
+                                        <p class="m-0 mt-1">Submission of SAT or ACT scores is optional but recommended.
+                                            Our holistic review considers scores within the full context of an
+                                            applicant's academic profile.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-6">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-navy text-white flex items-center justify-center font-serif text-2xl font-bold">
+                                        4</div>
+                                    <div>
+                                        <h4 class="font-serif text-xl text-navy m-0">High School Diploma/GED</h4>
+                                        <p class="m-0 mt-1">Applicants must have earned a diploma from an accredited
+                                            high school or a General Educational Development (GED) certificate.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-6">
+                                    <div
+                                        class="flex-shrink-0 size-12 bg-navy text-white flex items-center justify-center font-serif text-2xl font-bold">
+                                        5</div>
+                                    <div>
+                                        <h4 class="font-serif text-xl text-navy m-0">Criminal Record Disclosure</h4>
+                                        <p class="m-0 mt-1">Applicants must disclose any prior felony convictions as
+                                            part of the application process.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="py-12 border-b border-gray-200" id="equal-opportunity">
+                            <h3 class="mt-0">Equal Opportunity Admissions</h3>
+                            <p>Freedom College of Excellence admits students of any race, color, national and ethnic
+                                origin to all the rights, privileges, programs, and activities generally accorded or
+                                made available to students at the school. It does not discriminate on the basis of race,
+                                color, national and ethnic origin in administration of its educational policies,
+                                admissions policies, scholarship and loan programs, and athletic and other
+                                school-administered programs.</p>
+                        </section>
+                        <section class="py-12 border-b border-gray-200" id="homeschooled">
+                            <h2 class="text-4xl mt-0">Homeschooled Applicants</h2>
+                            <p>We welcome applications from homeschooled students. In addition to the general
+                                requirements, homeschooled applicants should provide:</p>
+                            <ul class="list-disc pl-6 space-y-2 mt-4">
+                                <li>A detailed curriculum description and book list for grades 9-12.</li>
+                                <li>A portfolio of representative academic work.</li>
+                                <li>Official results from standardized tests (e.g., SAT, ACT, AP exams) to demonstrate
+                                    subject mastery.</li>
+                                <li>At least one letter of recommendation from a non-family member who can speak to the
+                                    applicant’s academic and personal qualities.</li>
+                            </ul>
+                        </section>
+                        <section class="pt-12" id="recordkeeping">
+                            <h3 class="mt-0">Recordkeeping &amp; Compliance</h3>
+                            <p>All application materials become the property of Freedom College of Excellence. The
+                                Office of Admissions is responsible for maintaining all undergraduate admission records
+                                in accordance with institutional policy and federal regulations.</p>
+                            <h4 class="font-serif text-lg text-navy mt-8">Compliance References:</h4>
+                            <ul class="text-sm list-none p-0 space-y-1 text-text-secondary/80">
+                                <li>Title IV of the Higher Education Act</li>
+                                <li>Family Educational Rights and Privacy Act (FERPA)</li>
+                                <li>Title IX of the Education Amendments of 1972</li>
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+                <aside class="lg:col-span-4 lg:sticky lg:top-32 self-start">
+                    <div class="bg-white p-8 shadow-lg border-l-4 border-gold">
+                        <h3 class="font-serif text-2xl text-navy mb-4">Contact Admissions</h3>
+                        <p class="text-text-secondary text-sm mb-6">Our admissions counselors are here to help guide you
+                            through the process.</p>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-teal text-xl mt-0.5">location_on</span>
+                                <div class="text-text-secondary">
+                                    <span class="font-bold text-text-primary">Office of Admissions</span><br />
+                                    123 Freedom Way<br />Liberty City, ST 12345
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-teal text-xl mt-0.5">call</span>
+                                <a class="text-text-secondary hover:text-gold" href="tel:5551234567">(555) 123-4567</a>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-teal text-xl mt-0.5">mail</span>
+                                <a class="text-text-secondary hover:text-gold"
+                                    href="mailto:admissions@freedomcollege.edu">admissions@freedomcollege.edu</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a class="w-full inline-flex items-center justify-center h-14 px-8 bg-gold hover:bg-navy text-navy hover:text-white font-sans font-bold uppercase tracking-wider text-sm transition-all duration-300 shadow-xl hover:-translate-y-1"
+                            href="#">
+                            Apply Now
+                            <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+                        </a>
+                        <a class="w-full mt-4 inline-flex items-center justify-center h-14 px-8 border border-navy/30 hover:border-navy text-navy font-sans font-bold uppercase tracking-wider text-sm hover:bg-navy hover:text-white transition-all duration-300"
+                            href="#">
+                            Request Info
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 text-white">
+                        <img src="images/logo.jpg" alt="Logo"
+                            class="size-20 object-contain rounded-full border border-white/10">
+                        <div class="leading-none">
+                            <span class="block font-serif text-lg font-bold uppercase tracking-wide">Freedom
+                                College</span>
+                            <span class="block font-display italic text-sm text-gold">of Excellence</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed text-white/60">
+                        123 Freedom Way<br /> Liberty City, ST 12345<br /> (555) 123-4567
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">Twitter</a>
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">LinkedIn</a>
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">Instagram</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Academics</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Undergraduate Programs</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Graduate &amp; Professional</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Library</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Registrar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Admissions</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Apply for Admission</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Tuition &amp; Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Visit Campus</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Virtual Tour</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Request Info</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Careers at FCoE</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">News &amp; Media</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Alumni Association</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Nondiscrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

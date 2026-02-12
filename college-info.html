@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>College Information - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Lato:wght@300;400;700;900&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: "#0A1F44",
+                            deep: "#08182E",
+                        },
+                        gold: {
+                            DEFAULT: "#D4AF37",
+                            light: "#E8C971",
+                        },
+                        teal: {
+                            DEFAULT: "#1FA2A8",
+                        },
+                        cream: "#FAF9F6",
+                        light: "#F5F5F0",
+                        text: {
+                            primary: "#2B2B2B",
+                            secondary: "#5A5A5A",
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"],
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        /* Dropdown Styles */
+        .mega-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        .group:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .info-card {
+            background: white;
+            padding: 3rem;
+            border-bottom: 8px solid #0A1F44;
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans selection:bg-gold selection:text-white">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+    <header
+        class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4 group" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College of Excellence Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1
+                            class="font-serif text-navy text-xl font-bold tracking-tight leading-none group-hover:text-navy-deep transition-colors uppercase">
+                            Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic tracking-wide">of Excellence</span>
+                    </div>
+                </a>
+                <nav class="hidden xl:flex items-center gap-8 h-full">
+                    <a class="text-navy hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors"
+                        href="index.html">Home</a>
+
+                    <!-- Admissions Dropdown -->
+                    <div class="group h-full flex items-center">
+                        <button
+                            class="flex items-center gap-1 text-navy group-hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors py-10">
+                            Admissions <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div
+                            class="mega-menu absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl z-40">
+                            <div class="max-w-[1400px] mx-auto px-12 py-10 grid grid-cols-4 gap-12">
+                                <div>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Admissions
+                                        Policies</h4>
+                                    <ul class="space-y-3">
+                                        <li><a href="undergraduate-admissions-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Undergraduate</a>
+                                        </li>
+                                        <li><a href="graduate-admissions-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Graduate</a>
+                                        </li>
+                                        <li><a href="transfer-student-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Transfer
+                                                Students</a></li>
+                                        <li><a href="international-admissions-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">International
+                                                Students</a></li>
+                                        <li><a href="high-school-college-credit-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">High
+                                                School Credits</a></li>
+                                        <li><a href="readmission-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Readmission</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-2">
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Forward
+                                        Motion</h4>
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="bg-cream/50 p-6">
+                                            <span class="material-symbols-outlined text-teal mb-2">school</span>
+                                            <h5 class="text-navy font-bold text-sm mb-2">Advanced Studies</h5>
+                                            <p class="text-[11px] text-text-secondary leading-relaxed">Explore our
+                                                master's and doctoral programs.</p>
+                                        </div>
+                                        <div class="bg-cream/50 p-6">
+                                            <span class="material-symbols-outlined text-teal mb-2">work</span>
+                                            <h5 class="text-navy font-bold text-sm mb-2">Professional Growth</h5>
+                                            <p class="text-[11px] text-text-secondary leading-relaxed">Tailored for
+                                                working professionals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative overflow-hidden group/img">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjSkkfMz_m-JhPCycTDdNRCfToqolUon04VZHsFFPUDrOoAVETPp41yTrRtTZulMnnqBRCvvHYAxKf-2SdBLDAZxj9PNnf13zkRE0wjFHQHPtTG3-BSc6EQe--qS-oYazxpi0dmwpqQSEGUx5OrZhWmGPOT97suUTQD3jsEnxIsWvWXoxqZf-7sTpaPFLkJXSuqF4USewy4xbGGief5dOGHQzjmAlf3H9mwlfjGW-lA8Vuv0wtpi1HmxmBKrnwaUkOkgBcT5BCrk8"
+                                        class="w-full h-full object-cover grayscale transition-all group-hover/img:grayscale-0 group-hover/img:scale-110">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tuition & Aid Dropdown -->
+                    <div class="group h-full flex items-center">
+                        <button
+                            class="flex items-center gap-1 text-navy group-hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors py-10">
+                            Tuition & Aid <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div
+                            class="mega-menu absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl z-40">
+                            <div class="max-w-[1400px] mx-auto px-12 py-10 grid grid-cols-4 gap-12">
+                                <div>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Financial
+                                        Policies</h4>
+                                    <ul class="space-y-3">
+                                        <li><a href="tuition-and-fees-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Fees
+                                                & Costs</a></li>
+                                        <li><a href="payment-plan-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Payment
+                                                Plans</a></li>
+                                        <li><a href="refund-adjustment-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Refunds
+                                                & Adjustments</a></li>
+                                        <li><a href="withdrawal-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Withdrawal
+                                                Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Financial
+                                        Aid</h4>
+                                    <ul class="space-y-3">
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Scholarships</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Federal
+                                                & State Aid</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academics Dropdown -->
+                    <div class="group h-full flex items-center border-b-2 border-gold">
+                        <button
+                            class="flex items-center gap-1 text-gold text-xs font-bold uppercase tracking-widest transition-colors py-10">
+                            Academics <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div
+                            class="mega-menu absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl z-40">
+                            <div class="max-w-[1400px] mx-auto px-12 py-10 grid grid-cols-4 gap-12">
+                                <div>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Academic
+                                        Policies</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="academic-policies.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">General
+                                                Policies</a></li>
+                                        <li><a href="academic-requirements.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Degree
+                                                Requirements</a></li>
+                                        <li><a href="college-info.html"
+                                                class="text-xs text-gold transition-colors uppercase tracking-widest font-bold underline">College
+                                                Information</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal p-8 flex flex-col justify-center">
+                                    <span class="material-symbols-outlined text-white text-4xl mb-4">auto_stories</span>
+                                    <a href="#"
+                                        class="text-white font-bold text-[10px] uppercase tracking-widest border border-white/50 px-4 py-2 hover:bg-white hover:text-teal transition-all text-center">Download
+                                        PDF Catalog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1400px] mx-auto px-6 lg:px-12 py-20">
+        <div class="text-center mb-24 gsap-reveal">
+            <h1 class="font-serif text-5xl md:text-7xl text-navy mb-8">College Information & Disclosure</h1>
+            <p class="max-w-2xl mx-auto text-lg text-text-secondary leading-relaxed">Freedom College of Excellence is
+                committed to providing a safe, transparent, and inclusive environment for all members of our community.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 gsap-reveal">
+            <!-- FERPA -->
+            <div class="info-card">
+                <h3 class="font-serif text-3xl text-navy mb-6">FERPA & Privacy</h3>
+                <p class="text-sm text-text-secondary leading-relaxed mb-8">The Family Educational Rights and Privacy
+                    Act (FERPA) protects the privacy of student education records. This policy outlines how FCoE
+                    manages, discloses, and protects your information.</p>
+                <ul class="space-y-4 mb-10 text-xs font-bold uppercase tracking-widest text-navy">
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Review of Records
+                    </li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Request to Amend
+                    </li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Disclosure Consent
+                    </li>
+                </ul>
+                <a href="#"
+                    class="bg-navy text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-gold hover:text-navy transition-all">Read
+                    Full Policy</a>
+            </div>
+
+            <!-- Title IX -->
+            <div class="info-card">
+                <h3 class="font-serif text-3xl text-navy mb-6">Title IX & Sexual Misconduct</h3>
+                <p class="text-sm text-text-secondary leading-relaxed mb-8">FCoE does not discriminate on the basis of
+                    sex in its education programs and activities. We are committed to maintaining an environment free
+                    from all forms of sexual harassment and violence.</p>
+                <ul class="space-y-4 mb-10 text-xs font-bold uppercase tracking-widest text-navy">
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Reporting
+                        Procedures</li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Supportive Measures
+                    </li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Formal Grievance
+                        Process</li>
+                </ul>
+                <a href="#"
+                    class="bg-navy text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-gold hover:text-navy transition-all">Title
+                    IX Resources</a>
+            </div>
+
+            <!-- Non-Discrimination -->
+            <div class="info-card">
+                <h3 class="font-serif text-3xl text-navy mb-6">Non-Discrimination Policy</h3>
+                <p class="text-sm text-text-secondary leading-relaxed mb-8">Freedom College of Excellence is an equal
+                    opportunity institution. We prohibit discrimination on the basis of race, color, national origin,
+                    religion, disability, age, or genetics.</p>
+                <ul class="space-y-4 mb-10 text-xs font-bold uppercase tracking-widest text-navy">
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Inclusive
+                        Admissions</li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Equitable Hiring
+                    </li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> ADA Accommodations
+                    </li>
+                </ul>
+                <a href="#"
+                    class="bg-navy text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-gold hover:text-navy transition-all">Compliance
+                    Statement</a>
+            </div>
+
+            <!-- Campus Security -->
+            <div class="info-card">
+                <h3 class="font-serif text-3xl text-navy mb-6">Clery Act & Campus Safety</h3>
+                <p class="text-sm text-text-secondary leading-relaxed mb-8">The health and safety of our students is our
+                    top priority. We provide annual security reports and timely warnings in compliance with the Clery
+                    Act.</p>
+                <ul class="space-y-4 mb-10 text-xs font-bold uppercase tracking-widest text-navy">
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Annual Security
+                        Report</li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Emergency Response
+                    </li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined text-gold text-sm">arrow_forward</span> Crime Statistics
+                    </li>
+                </ul>
+                <a href="#"
+                    class="bg-navy text-white px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-gold hover:text-navy transition-all">View
+                    Safety Data</a>
+            </div>
+        </div>
+
+        <!-- Consumer Information -->
+        <div class="mt-24 p-16 bg-white shadow-2xl border-t-8 border-teal gsap-reveal">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-serif text-4xl text-navy mb-6">Higher Education Act Disclosures</h2>
+                <p class="text-text-secondary leading-relaxed mb-10">In accordance with the Higher Education Act of
+                    1965, as amended, Freedom College of Excellence provides a comprehensive list of consumer
+                    information and institutional disclosures.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                    <a href="#"
+                        class="p-4 border border-gray-100 hover:border-gold transition-colors flex items-center justify-between group">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-navy">Financial Aid
+                            Info</span>
+                        <span
+                            class="material-symbols-outlined text-teal group-hover:translate-x-1 transition-transform">open_in_new</span>
+                    </a>
+                    <a href="#"
+                        class="p-4 border border-gray-100 hover:border-gold transition-colors flex items-center justify-between group">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-navy">Graduation Rates</span>
+                        <span
+                            class="material-symbols-outlined text-teal group-hover:translate-x-1 transition-transform">open_in_new</span>
+                    </a>
+                    <a href="#"
+                        class="p-4 border border-gray-100 hover:border-gold transition-colors flex items-center justify-between group">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-navy">Student Diversity</span>
+                        <span
+                            class="material-symbols-outlined text-teal group-hover:translate-x-1 transition-transform">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 text-white">
+                        <img src="images/logo.jpg" alt="Logo"
+                            class="size-20 object-contain rounded-full border border-white/10">
+                        <div class="leading-none">
+                            <span class="block font-serif text-lg font-bold uppercase tracking-wide">Freedom
+                                College</span>
+                            <span class="block font-display italic text-sm text-gold">of Excellence</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed text-white/60">
+                        123 Freedom Way, Liberty City, ST 12345<br />
+                        (555) 123-4567
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Policies</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="international-admissions-policy.html">International</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Apply Now</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="withdrawal-policy.html">Withdrawal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-6 border border-white/10">
+                    <h4 class="text-white font-serif text-lg mb-4">Newsletter</h4>
+                    <p class="text-xs text-white/40 mb-4">Stay informed about admissions cycles.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Email"
+                            class="bg-navy-deep border border-white/20 text-white px-3 py-2 text-xs w-full focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Nondiscrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top 90%" },
+                opacity: 1, y: 0, duration: 1, ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>
