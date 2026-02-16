@@ -129,6 +129,13 @@
             position: absolute;
             left: 0;
         }
+
+        .highlight-box {
+            background: #F5F5F0;
+            padding: 1.5rem;
+            border-left: 4px solid #1FA2A8;
+            margin-bottom: 1.5rem;
+        }
     </style>
 </head>
 
@@ -136,7 +143,7 @@
     <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
         <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
             <a class="hover:text-gold transition-colors" href="#">Alumni</a>
-            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty &amp; Staff</a>
             <a class="hover:text-gold transition-colors" href="#">Parents</a>
             <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
                 <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
@@ -187,7 +194,7 @@
                                                 class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">International
                                                 Students</a></li>
                                         <li><a href="high-school-college-credit-policy.html"
-                                                class="text-xs text-gold transition-colors uppercase tracking-widest">High
+                                                class="text-xs text-gold transition-colors uppercase tracking-widest font-bold">High
                                                 School Credits</a></li>
                                         <li><a href="readmission-policy.html"
                                                 class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Readmission</a>
@@ -307,7 +314,7 @@
                         Request Info
                     </a>
                     <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md hover:shadow-lg transition-all duration-300"
-                        href="#">
+                        href="high-school-college-credit-policy.html">
                         Apply Now
                     </a>
                 </div>
@@ -361,19 +368,14 @@
                         </nav>
                     </div>
 
-                    <div class="bg-teal p-8 text-white relative overflow-hidden group">
-                        <div class="relative z-10">
-                            <h4 class="font-serif text-lg mb-4 text-white font-bold italic">Dual Credit Scholarships
-                            </h4>
-                            <p class="text-xs text-white/80 leading-relaxed mb-6">KY students may be eligible for Duo
-                                Credit and Work Ready scholarships via KHEAA.</p>
-                            <a href="https://www.kheaa.com" target="_blank"
-                                class="inline-flex items-center gap-2 bg-white text-teal px-4 py-2 font-bold text-[10px] uppercase tracking-widest hover:bg-navy hover:text-white transition-all">
-                                Learn More <span class="material-symbols-outlined text-sm">open_in_new</span>
-                            </a>
-                        </div>
-                        <span
-                            class="material-symbols-outlined absolute -bottom-4 -right-4 text-white/10 text-8xl group-hover:scale-110 transition-transform">workspace_premium</span>
+                    <div class="bg-navy p-8 text-white">
+                        <h4 class="font-serif text-lg mb-4 text-gold italic">Dual Credit Info</h4>
+                        <p class="text-xs text-white/70 leading-relaxed mb-6">Earn college credit while still in high
+                            school.</p>
+                        <a href="mailto:dualcredit@freedomcollege.edu"
+                            class="inline-flex items-center gap-2 text-gold font-bold text-[10px] uppercase tracking-widest hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">school</span> Email Office
+                        </a>
                     </div>
                 </div>
             </aside>
@@ -387,10 +389,11 @@
                         <span class="text-gold">/</span>
                         <a href="#" class="hover:text-gold transition-colors">Admissions</a>
                         <span class="text-gold">/</span>
-                        <span class="text-navy font-bold">Dual Credit</span>
+                        <span class="text-navy font-bold">High School Credits</span>
                     </nav>
                     <h1 class="font-serif text-4xl md:text-6xl text-navy leading-tight mb-4">High School College Credit
-                        Policy</h1>
+                        Policy
+                    </h1>
                     <div class="h-1 w-24 bg-gold"></div>
                 </div>
 
@@ -398,80 +401,71 @@
                     class="policy-content bg-white p-8 md:p-12 shadow-2xl rounded-sm border-t-8 border-navy gsap-reveal">
                     <section>
                         <h2>Purpose</h2>
-                        <p>The purpose of this policy is to establish standards and procedures for awarding college
-                            credit to
-                            high school students who complete eligible college-level coursework.</p>
-                        <p>Ensures that credit earned by high school students meets the same academic rigor and learning
-                            outcomes required for degree-seeking students at FCoE.</p>
+                        <p>To provide high-achieving high school students the opportunity to earn college credit prior
+                            to high school graduation through dual credit or concurrent enrollment.</p>
+                        <p>This policy outlines eligibility, admission requirements, and the awarding of credit.</p>
                     </section>
 
                     <section>
                         <h2>Policy Statement</h2>
-                        <p>Freedom College of Excellence allows high school students with qualified academic credentials
-                            to
-                            enroll in courses and earn credits through the Freedom College of Excellence Credit Program.
-                        </p>
+                        <p>Freedom College of Excellence encourages academic acceleration. Qualified high school
+                            students may enroll in college-level courses that count toward both their high school
+                            diploma and a college degree (Dual Credit) or for college credit only (Concurrent
+                            Enrollment).</p>
                     </section>
 
                     <section>
                         <h2>1. Eligibility Requirements</h2>
+                        <p>High school students must meet the following criteria to participate:</p>
                         <ul class="space-y-3">
-                            <li>Enrolled in approved public, private, charter, or home-school program.</li>
-                            <li>Completed at least the 10th grade (or equivalent).</li>
-                            <li>Minimum cumulative GPA of 2.5 (on 4.0 scale) or demonstrated readiness.</li>
-                            <li>Written permission from parent/guardian and school official.</li>
-                            <li>Meet all course prerequisites.</li>
+                            <li>Be classified as a high school junior or senior.</li>
+                            <li>Have a minimum overall high school GPA of 3.0 on a 4.0 scale.</li>
+                            <li>Meet Texas Success Initiative (TSI) exemption or readiness standards in Reading,
+                                Writing, and Math.</li>
+                            <li>Obtain written permission from their high school principal or counselor and a
+                                parent/guardian.</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2>2. Scholarships</h2>
-                        <p>Kentucky students may be eligible for:</p>
-                        <ul class="space-y-3">
-                            <li>Kentucky Dual Credit Scholarship</li>
-                            <li>Work Ready Dual Credit Scholarship</li>
-                        </ul>
-                        <p>Both programs are funded by KHEAA. Students must apply through the KHEAA website each year.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2>3. Admission and Enrollment Process</h2>
-                        <div class="bg-cream p-8 border-l-8 border-teal mb-8">
-                            <ol class="list-decimal pl-5 space-y-4 text-sm text-text-secondary leading-relaxed">
-                                <li>Complete the High School Credit Application.</li>
-                                <li>Review by Admissions and Academic Department.</li>
-                                <li>Meet all add/drop deadlines and tuition payment terms.</li>
-                                <li>Subject to all academic and conduct policies.</li>
-                            </ol>
+                        <h2>2. Scholarship Information</h2>
+                        <div class="highlight-box">
+                            <strong>Accelerate Scholarship:</strong> Eligible dual credit students receive a
+                            significantly reduced tuition rate ($50 per credit hour) and waived general fees.
                         </div>
                     </section>
 
                     <section>
-                        <h2>4. Course Delivery and Instruction</h2>
+                        <h2>3. Admission & Enrollment Process</h2>
                         <ul class="space-y-3">
-                            <li>Offered on-campus or online through the LMS.</li>
-                            <li>Taught by College-approved faculty.</li>
-                            <li>Identical content and assessment to traditional courses.</li>
+                            <li>Submit the "Dual Credit Admission Application" (no fee required).</li>
+                            <li>Submit an official high school transcript.</li>
+                            <li>Submit TSI assessment scores or proof of exemption.</li>
+                            <li>Register for courses in consultation with a Freedom College academic advisor.</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2>5. Awarding and Recording Credit</h2>
+                        <h2>4. Course Delivery</h2>
+                        <p>Courses may be delivered:</p>
                         <ul class="space-y-3">
-                            <li>Grade of “C” or higher required for credit.</li>
-                            <li>Recorded on official College transcript.</li>
-                            <li>May apply toward FCoE degree or transfer.</li>
-                            <li>Grades included in permanent academic record.</li>
+                            <li>On the Freedom College campus.</li>
+                            <li>Online via our Learning Management System.</li>
+                            <li>At the high school campus (if taught by credentialed Freedom College faculty).</li>
                         </ul>
+                    </section>
+
+                    <section>
+                        <h2>5. Credit Awarding</h2>
+                        <p>Credits earned are recorded on an official Freedom College transcript. These credits are
+                            fully transferable to most public colleges and universities in the state.</p>
                     </section>
 
                     <div class="mt-16 p-10 bg-navy-deep text-white/80 text-xs border-l-8 border-teal">
                         <p class="font-serif text-gold text-lg mb-4 italic">Compliance References</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white/60">
-                            <p>• 34 CFR §668.43(a)(11) – Disclosure</p>
-                            <p>• 34 CFR §600.2 – Credit Hour Definition</p>
-                            <p>• 34 CFR §668.32 – Student Eligibility</p>
+                            <p>• 19 TAC §4.85 – Dual Credit Requirements</p>
+                            <p>• SACSCOC Dual Enrollment Policy</p>
                         </div>
                     </div>
                 </div>
@@ -508,50 +502,65 @@
                         </div>
                     </div>
                     <p class="text-sm leading-relaxed text-white/60">
-                        123 Freedom Way, Liberty City, ST 12345<br />
+                        123 Freedom Way<br />
+                        Liberty City, ST 12345<br />
                         (555) 123-4567
                     </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-serif text-lg mb-6">Policies</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a class="hover:text-gold transition-colors"
-                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
-                        <li><a class="hover:text-gold transition-colors"
-                                href="graduate-admissions-policy.html">Graduate</a></li>
-                        <li><a class="hover:text-gold transition-colors"
-                                href="international-admissions-policy.html">International</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-serif text-lg mb-6">Quick Links</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a class="hover:text-gold transition-colors" href="#">Apply Now</a></li>
-                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
-                                Fees</a></li>
-                        <li><a class="hover:text-gold transition-colors" href="withdrawal-policy.html">Withdrawal</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white/5 p-6 border border-white/10">
-                    <h4 class="text-white font-serif text-lg mb-4">Newsletter</h4>
-                    <p class="text-xs text-white/40 mb-4">Stay informed about admissions cycles.</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Email"
-                            class="bg-navy-deep border border-white/20 text-white px-3 py-2 text-xs w-full focus:outline-none focus:border-gold">
-                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    <div class="flex gap-4">
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#"><i
+                                class="fa-brands fa-twitter"></i> Twitter</a>
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">LinkedIn</a>
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">Instagram</a>
                     </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Academics</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Undergraduate Programs</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Graduate &amp; Professional</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Library</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Registrar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Admissions</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Apply for Admission</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Tuition &amp; Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Visit Campus</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Virtual Tour</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Request Info</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Careers at FCoE</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">News &amp; Media</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Alumni Association</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="bg-[#050f1e] py-6">
             <div
                 class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
-                <p>© 2024 Freedom College of Excellence.</p>
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
                 <div class="flex gap-8">
-                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-                    <a class="hover:text-white transition-colors" href="#">Nondiscrimination</a>
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
                     <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
                 </div>
             </div>
         </div>

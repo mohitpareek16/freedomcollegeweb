@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Academic Status Policy - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { navy: { DEFAULT: "#0A1F44", deep: "#08182E" }, gold: { DEFAULT: "#D4AF37", light: "#E8C971" }, teal: { DEFAULT: "#1FA2A8" }, cream: "#FAF9F6", text: { primary: "#2B2B2B", secondary: "#5A5A5A" } }, fontFamily: { sans: ["Lato", "sans-serif"], serif: ["Libre Baskerville", "serif"], display: ["Cormorant Garamond", "serif"] } } } }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#"><span
+                    class="material-symbols-outlined text-[14px]">favorite</span> Giving</a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="academic-policies.html" class="hover:text-gold transition-colors">Academic Policies</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Academic Status</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Academic Status Policy</h1>
+            <p class="text-xl text-gold font-display italic">Academic Standing Classifications</p>
+        </div>
+    </section>
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+                <h2>Purpose</h2>
+                <p>The Academic Status Policy defines the criteria for determining a student's academic standing and
+                    outlines the academic intervention processes for students who are not meeting academic performance
+                    standards.</p>
+
+                <h2>Academic Status Categories</h2>
+
+                <h3>1. Good Standing</h3>
+                <p><strong>Criteria:</strong> Students meet or exceed minimum GPA requirements:</p>
+                <ul>
+                    <li>Undergraduate: Cumulative GPA ≥ 2.0</li>
+                    <li>Graduate: Cumulative GPA ≥ 3.0</li>
+                </ul>
+                <p>Students in Good Standing are eligible for registration, financial aid, and all College privileges.
+                </p>
+
+                <h3>2. Academic Warning</h3>
+                <p><strong>Criteria:</strong> Students fall below minimum GPA for the first time:</p>
+                <ul>
+                    <li>Undergraduate: Cumulative GPA < 2.0</li>
+                    <li>Graduate: Cumulative GPA < 3.0</li>
+                </ul>
+                <p><strong>Consequences:</strong></p>
+                <ul>
+                    <li>Mandatory academic advising meeting;</li>
+                    <li>Development of an Academic Success Plan;</li>
+                    <li>May be required to reduce course load;</li>
+                    <li>Registration for the following term may be delayed untiladvising requirements are met.</li>
+                </ul>
+
+                <h3>3. Academic Probation</h3>
+                <p><strong>Criteria:</strong> Students on Academic Warning who fail to return to Good Standing after one
+                    semester.</p>
+                <p><strong>Consequences:</strong></p>
+                <ul>
+                    <li>Continued mandatory academic advising;</li>
+                    <li>Required participation in academic support programs;</li>
+                    <li>Course load may be limited;</li>
+                    <li>May lose eligibility for certain scholarships;</li>
+                    <li>Must achieve required GPA by end of probationary period to avoid suspension.</li>
+                </ul>
+
+                <h3>4. Academic Suspension</h3>
+                <p><strong>Criteria:</strong> Students on Academic Probation who fail to return to Good Standing after
+                    one additional semester.</p>
+                <p><strong>Duration:</strong> One semester (Fall or Spring)</p>
+                <p><strong>Consequences:</strong></p>
+                <ul>
+                    <li>Student is not permitted to enroll for one semester;</li>
+                    <li>Financial aid eligibility may be affected;</li>
+                    <li>Student may petition for reinstatement after suspension period;</li>
+                    <li>Must demonstrate readiness to return (may require coursework at another institution or evidence
+                        of changed circumstances).</li>
+                </ul>
+
+                <h3>5. Academic Dismissal</h3>
+                <p><strong>Criteria:</strong> Students who return from Academic Suspension and fail to achieve Good
+                    Standing, or students with a term GPA < 1.0.</p>
+                        <p><strong>Duration:</strong> Permanent separation from the College</p>
+                        <p><strong>Appeal:</strong> Students may appeal dismissal through the Academic Appeals process.
+                        </p>
+
+                        <h2>Dean's List and Honors</h2>
+                        <p><strong>Dean's List:</strong> Undergraduate students who earn a term GPA of 3.5 or higher
+                            while enrolled in at least 12 credits.</p>
+                        <p><strong>President's List:</strong> Undergraduate students who earn a term GPA of 3.8 or
+                            higher while enrolled in at least 12 credits.</p>
+
+                        <h2>Appeal Process</h2>
+                        <p>Students may appeal Academic Suspension or Dismissal by submitting a written petition to the
+                            Academic Standards Committee within 10 business days of notification.</p>
+
+                        <h2>Reinstatement After Suspension</h2>
+                        <p>Students seeking reinstatement must:</p>
+                        <ul>
+                            <li>Submit a reinstatement petition;</li>
+                            <li>Provide evidence of readiness for academic success;</li>
+                            <li>Meet with an Academic Advisor to develop an Academic Success Plan;</li>
+                            <li>Agree to conditions of return (e.g., reduced course load, mandatory tutoring).</li>
+                        </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

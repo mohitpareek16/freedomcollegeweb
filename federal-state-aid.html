@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Federal & State Aid Programs - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: "#0A1F44", deep: "#08182E" },
+                        gold: { DEFAULT: "#D4AF37", light: "#E8C971" },
+                        teal: { DEFAULT: "#1FA2A8" },
+                        cream: "#FAF9F6",
+                        light: "#F5F5F0",
+                        text: { primary: "#2B2B2B", secondary: "#5A5A5A" }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="#" class="hover:text-gold transition-colors">Financial Aid</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Federal & State Aid Programs</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Federal & State Aid Programs</h1>
+            <p class="text-xl text-gold font-display italic">Making Education Accessible</p>
+        </div>
+    </section>
+
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+
+                <h2>Overview</h2>
+                <p>Freedom College of Excellence participates in federal and state financial aid programs to help
+                    students and families afford the cost of higher education. This page provides an overview of
+                    available federal Title IV aid programs, state grant programs, and the process for applying and
+                    maintaining eligibility.</p>
+
+                <h2>Federal Student Aid (Title IV Programs)</h2>
+                <p>Freedom College of Excellence is an eligible institution under Title IV of the Higher Education Act
+                    and participates in the following federal student aid programs administered by the U.S. Department
+                    of Education.</p>
+
+                <h3>Eligibility Requirements</h3>
+                <p>To receive federal student aid, students must:</p>
+                <ul>
+                    <li>Be a U.S. citizen or eligible non-citizen;</li>
+                    <li>Have a valid Social Security Number;</li>
+                    <li>Be enrolled or accepted for enrollment in an eligible degree or certificate program;</li>
+                    <li>Maintain Satisfactory Academic Progress (SAP) as defined by the College's SAP Policy;</li>
+                    <li>Not be in default on any federal student loan or owe a refund on a federal grant;</li>
+                    <li>Register with Selective Service (if required);</li>
+                    <li>Have a high school diploma, GED, or approved homeschool completion.</li>
+                </ul>
+
+                <h3>Federal Grant Programs</h3>
+
+                <h4>1. Federal Pell Grant</h4>
+                <p><strong>Award Amount:</strong> Up to $7,395 per year (2024-2025)</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Undergraduate students only;</li>
+                    <li>Based on financial need as determined by the FAFSA;</li>
+                    <li>Enrollment status affects award amount (full-time, three-quarter-time, half-time, less than
+                        half-time);</li>
+                    <li>Lifetime Eligibility Used (LEU) cannot exceed 600% (equivalent to 6 full-time years).</li>
+                </ul>
+                <p><strong>How to Apply:</strong> Complete the Free Application for Federal Student Aid (FAFSA) at <a
+                        href="https://studentaid.gov" target="_blank">studentaid.gov</a>.</p>
+                <p><strong>Disbursement:</strong> Awarded per semester; credited directly to the student's account to
+                    cover tuition, fees, and other charges. Any remaining funds are refunded to the student.</p>
+
+                <h4>2. Federal Supplemental Educational Opportunity Grant (FSEOG)</h4>
+                <p><strong>Award Amount:</strong> $100 - $4,000 per year (based on availability)</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Undergraduate students with exceptional financial need;</li>
+                    <li>Priority given to Pell Grant recipients;</li>
+                    <li>Campus-based program; funds are limited and awarded on a first-come, first-served basis.</li>
+                </ul>
+                <p><strong>How to Apply:</strong> Complete the FAFSA as early as possible (priority deadline: March 1).
+                </p>
+
+                <h4>3. Iraq and Afghanistan Service Grant</h4>
+                <p><strong>Award Amount:</strong> Equal to the maximum Pell Grant amount</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Students whose parent or guardian died as a result of military service in Iraq or Afghanistan
+                        after September 11, 2001;</li>
+                    <li>Student must be under 24 years old or enrolled at least part-time at the time of the parent's
+                        death;</li>
+                    <li>Not eligible for a Pell Grant based on Expected Family Contribution (EFC).</li>
+                </ul>
+                <p><strong>How to Apply:</strong> Complete the FAFSA.</p>
+
+                <h3>Federal Work-Study (FWS)</h3>
+                <p><strong>Award Amount:</strong> Varies (based on financial need and available funding)</p>
+                <p><strong>Description:</strong> Federal Work-Study provides part-time employment opportunities for
+                    students with financial need, allowing them to earn money to help cover educational expenses.</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Undergraduate and graduate students with demonstrated financial need;</li>
+                    <li>Campus-based program with limited funding;</li>
+                    <li>Students must apply for and secure a work-study position through the College's Career Services
+                        Office.</li>
+                </ul>
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Students are paid at least minimum wage (or higher, depending on the position);</li>
+                    <li>Paychecks are issued bi-weekly; earnings are not automatically applied to tuition;</li>
+                    <li>Students may work up to 20 hours per week during the academic term and up to 40 hours during
+                        breaks.</li>
+                </ul>
+
+                <h3>Federal Student Loans</h3>
+
+                <h4>1. Direct Subsidized Loan (Undergraduate Only)</h4>
+                <p><strong>Loan Amount:</strong></p>
+                <ul>
+                    <li>Freshmen: Up to $3,500</li>
+                    <li>Sophomores: Up to $4,500</li>
+                    <li>Juniors/Seniors: Up to $5,500</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Based on financial need;</li>
+                    <li>The U.S. Department of Education pays the interest while the student is enrolled at least
+                        half-time, during the grace period, and during authorized deferment periods;</li>
+                    <li>Interest rate: 5.50% (fixed, for loans disbursed July 1, 2023 – June 30, 2024).</li>
+                </ul>
+
+                <h4>2. Direct Unsubsidized Loan</h4>
+                <p><strong>Loan Amount:</strong></p>
+                <ul>
+                    <li>Undergraduates: $2,000 - $7,500 per year (in addition to Subsidized Loan limits, if eligible)
+                    </li>
+                    <li>Graduate Students: Up to $20,500 per year</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Not based on financial need;</li>
+                    <li>Interest accrues from the time of disbursement; students may choose to pay interest while in
+                        school or allow it to capitalize;</li>
+                    <li>Interest rate: 5.50% (undergraduate), 7.05% (graduate) – fixed rates for loans disbursed July 1,
+                        2023 – June 30, 2024.</li>
+                </ul>
+
+                <h4>3. Direct PLUS Loan (Parent and Graduate)</h4>
+                <p><strong>Parent PLUS Loan (for parents of dependent undergraduate students):</strong></p>
+                <ul>
+                    <li>Loan Amount: Up to the cost of attendance minus other financial aid received;</li>
+                    <li>Features: Credit check required; cosigner not permitted; interest rate: 8.05% (fixed).</li>
+                </ul>
+                <p><strong>Graduate PLUS Loan (for graduate students):</strong></p>
+                <ul>
+                    <li>Loan Amount: Up to the cost of attendance minus other financial aid received;</li>
+                    <li>Features: Credit check required; interest rate: 8.05% (fixed).</li>
+                </ul>
+
+                <h3>Loan Repayment and Counseling</h3>
+                <p>All federal student loan borrowers are required to complete:</p>
+                <ul>
+                    <li><strong>Entrance Counseling:</strong> Before receiving the first loan disbursement (completed
+                        online at <a href="https://studentaid.gov" target="_blank">studentaid.gov</a>);</li>
+                    <li><strong>Exit Counseling:</strong> Before graduating, withdrawing, or dropping below half-time
+                        enrollment.</li>
+                </ul>
+                <p><strong>Repayment:</strong></p>
+                <ul>
+                    <li>Repayment begins six months after graduation, withdrawal, or dropping below half-time status;
+                    </li>
+                    <li>Multiple repayment plans are available, including income-driven repayment options;</li>
+                    <li>For more information, visit <a href="https://studentaid.gov" target="_blank">studentaid.gov</a>
+                        or contact your loan servicer.</li>
+                </ul>
+
+                <h2>State Financial Aid Programs</h2>
+                <p>Freedom College of Excellence partners with state agencies to provide additional grant and
+                    scholarship opportunities for eligible students. Availability and eligibility vary by state.</p>
+
+                <h3>State Grant Example Programs:</h3>
+                <ul>
+                    <li><strong>State Need-Based Grant:</strong> For residents demonstrating financial need; requires
+                        FAFSA completion;</li>
+                    <li><strong>State Merit Scholarship:</strong> For high-achieving students based on GPA and test
+                        scores;</li>
+                    <li><strong>State-Specific Workforce Grants:</strong> For students pursuing careers in high-demand
+                        fields (e.g., nursing, teaching, technology).</li>
+                </ul>
+                <p><strong>How to Apply:</strong> Complete the FAFSA and any required state-specific applications.
+                    Contact the Financial Aid Office for state-specific deadlines and requirements.</p>
+
+                <h2>How to Apply for Federal and State Aid</h2>
+
+                <h3>Step 1: Complete the FAFSA</h3>
+                <p>Visit <a href="https://studentaid.gov" target="_blank">studentaid.gov</a> and complete the Free
+                    Application for Federal Student Aid (FAFSA).</p>
+                <p><strong>Freedom College of Excellence Federal School Code:</strong> 123456</p>
+                <p><strong>Priority Deadline:</strong> March 1 (for Fall term)</p>
+
+                <h3>Step 2: Review Your Student Aid Report (SAR)</h3>
+                <p>After submitting the FAFSA, you will receive a Student Aid Report summarizing your information and
+                    Expected Family Contribution (EFC). Review for accuracy and make corrections if needed.</p>
+
+                <h3>Step 3: Receive Your Financial Aid Award Letter</h3>
+                <p>The Financial Aid Office will send an official award letter detailing your eligibility for grants,
+                    loans, and work-study. Review your award carefully.</p>
+
+                <h3>Step 4: Accept or Decline Awards</h3>
+                <p>Log in to your student portal to accept, decline, or adjust loan amounts. You are not required to
+                    accept all offered aid.</p>
+
+                <h3>Step 5: Complete Required Documents</h3>
+                <ul>
+                    <li>Entrance Counseling (for first-time loan borrowers);</li>
+                    <li>Master Promissory Note (MPN) for loans;</li>
+                    <li>Verification documents (if selected by the Department of Education).</li>
+                </ul>
+
+                <h2>Verification Process</h2>
+                <p>Some students are selected for verification by the U.S. Department of Education. If selected, you
+                    must submit:</p>
+                <ul>
+                    <li>IRS Tax Return Transcript or W-2 forms;</li>
+                    <li>Verification Worksheet (provided by the Financial Aid Office);</li>
+                    <li>Proof of household size and number in college (if applicable).</li>
+                </ul>
+                <p>Financial aid will not disburse until verification is complete. Submit documents as soon as possible
+                    to avoid delays.</p>
+
+                <h2>Maintaining Eligibility</h2>
+                <p>To continue receiving federal and state aid, students must:</p>
+                <ul>
+                    <li>Maintain Satisfactory Academic Progress (SAP) – see SAP Policy;</li>
+                    <li>Enroll at least half-time (6 credits per semester) for most aid programs;</li>
+                    <li>Reapply for aid annually by completing the FAFSA;</li>
+                    <li>Not be in default on federal loans or owe a refund on federal grants;</li>
+                    <li>Remain in good academic and disciplinary standing.</li>
+                </ul>
+
+                <h2>Contact Information</h2>
+                <p>For questions about federal and state financial aid, contact:</p>
+                <p><strong>Financial Aid Office</strong><br>
+                    Email: <a href="mailto:financialaid@freedomcollege.edu">financialaid@freedomcollege.edu</a><br>
+                    Phone: (555) 123-4567<br>
+                    Office Hours: Monday-Friday, 9:00 AM - 5:00 PM</p>
+
+                <h2>Additional Resources</h2>
+                <ul>
+                    <li><strong>Federal Student Aid Website:</strong> <a href="https://studentaid.gov"
+                            target="_blank">studentaid.gov</a></li>
+                    <li><strong>FAFSA Application:</strong> <a href="https://studentaid.gov/h/apply-for-aid/fafsa"
+                            target="_blank">studentaid.gov/fafsa</a></li>
+                    <li><strong>National Student Loan Data System (NSLDS):</strong> <a href="https://nslds.ed.gov"
+                            target="_blank">nslds.ed.gov</a></li>
+                    <li><strong>IRS Data Retrieval Tool:</strong> Available through the FAFSA application</li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="transfer-student-policy.html">Transfer
+                                Students</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="international-admissions-policy.html">International</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top 90%" },
+                opacity: 1, y: 0, duration: 1, ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

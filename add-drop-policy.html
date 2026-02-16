@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Add/Drop Policy - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: "#0A1F44",
+                            deep: "#08182E",
+                        },
+                        gold: {
+                            DEFAULT: "#D4AF37",
+                            light: "#E8C971",
+                        },
+                        teal: {
+                            DEFAULT: "#1FA2A8",
+                        },
+                        cream: "#FAF9F6",
+                        light: "#F5F5F0",
+                        text: {
+                            primary: "#2B2B2B",
+                            secondary: "#5A5A5A",
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"],
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <!-- Top Bar -->
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="#" class="hover:text-gold transition-colors">Tuition & Aid</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Add/Drop Policy</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Add/Drop Policy</h1>
+            <p class="text-xl text-gold font-display italic">Course Schedule Adjustments</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+
+                <h2>Purpose</h2>
+                <p>The purpose of this policy is to establish consistent procedures for students to add or drop courses
+                    during the designated period each term.</p>
+                <p>The policy ensures accuracy in student enrollment records, academic standing, and financial aid
+                    eligibility in compliance with institutional, state, and federal regulations, including Title IV of
+                    the Higher Education Act.</p>
+
+                <h2>Scope</h2>
+                <p>This policy applies to all students enrolled in credit-bearing programs at Freedom College of
+                    Excellence, including undergraduate, graduate, and certificate programs offered on campus, online,
+                    or in hybrid formats.</p>
+
+                <h2>Policy Statement</h2>
+                <p>Students are permitted to adjust their course schedules during the official Add/Drop Period at the
+                    beginning of each term.</p>
+                <p>All schedule changes must be completed in accordance with published deadlines in the Academic
+                    Calendar.</p>
+                <p>Adding or dropping courses after the deadline is only permitted in exceptional circumstances and
+                    requires written approval from the appropriate academic administrator.</p>
+
+                <h2>1. Add/Drop Period</h2>
+                <p>The Add/Drop Period is the timeframe during which students may freely add or drop courses without
+                    academic or financial penalty.</p>
+                <ul>
+                    <li>The standard Add/Drop Period is the first seven (7) calendar days of a 15-week semester.</li>
+                    <li>For accelerated or modular courses (e.g., 5- or 8-week terms), the Add/Drop Period is
+                        proportionately shorter (typically the first 3 business days).</li>
+                    <li>Specific dates are published each term in the Academic Calendar.</li>
+                </ul>
+
+                <h2>2. Adding Courses</h2>
+                <h3>A. Eligibility</h3>
+                <p>Students in good academic and financial standing may add courses during the official Add/Drop Period
+                    if:</p>
+                <ul>
+                    <li>Space is available in the desired course;</li>
+                    <li>All prerequisite requirements are met; and</li>
+                    <li>Adding the course does not exceed maximum term load limits established by the College or
+                        program.</li>
+                </ul>
+
+                <h3>B. Procedure</h3>
+                <ol>
+                    <li>The student submits an Add/Drop Request Form to the Registrar's Office (or via the student
+                        portal, if available).</li>
+                    <li>The form must include approval from the Academic Advisor or Program Director.</li>
+                    <li>The Registrar updates the student's official schedule and confirms the change via written notice
+                        or portal confirmation.</li>
+                </ol>
+
+                <h3>C. Financial Implications</h3>
+                <ul>
+                    <li>Additional tuition and fees associated with added courses are due immediately unless covered by
+                        financial aid.</li>
+                    <li>Title IV eligibility is recalculated based on the student's updated enrollment status.</li>
+                </ul>
+
+                <h2>3. Dropping Courses</h2>
+                <h3>A. Dropping During the Add/Drop Period</h3>
+                <ul>
+                    <li>Courses dropped during the Add/Drop Period are not recorded on the student's transcript.</li>
+                    <li>Dropped courses are not counted as attempted credits for Satisfactory Academic Progress (SAP).
+                    </li>
+                    <li>Tuition and fees are adjusted or refunded according to the Tuition and Fees Adjustment and
+                        Refund Policy.</li>
+                </ul>
+
+                <h3>B. Dropping After the Add/Drop Period</h3>
+                <ul>
+                    <li>Courses dropped after the Add/Drop Period are considered withdrawals and are subject to the
+                        College's Withdrawal Policy.</li>
+                    <li>A grade of "W" (Withdrawal) will appear on the student's transcript.</li>
+                    <li>"W" grades do not impact GPA but count as attempted hours for SAP and Title IV purposes.</li>
+                    <li>Financial aid recalculations may occur under Return of Title IV (R2T4) regulations.</li>
+                </ul>
+
+                <h2>4. Late Add or Drop Requests</h2>
+                <p>Requests made after the official Add/Drop Period are only approved under documented extenuating
+                    circumstances, such as:</p>
+                <ul>
+                    <li>Administrative error in registration;</li>
+                    <li>Instructor or advisor recommendation due to academic misplacement;</li>
+                    <li>Verified medical, family, or personal emergencies.</li>
+                </ul>
+
+                <h3>Process:</h3>
+                <ol>
+                    <li>The student submits a written request with documentation to the Academic Dean.</li>
+                    <li>The Dean, in consultation with the Registrar and Financial Aid Office, reviews the request.</li>
+                    <li>Approved requests result in retroactive schedule adjustment, transcript update, and any
+                        necessary financial recalculation.</li>
+                    <li>Denied requests may be appealed following the College's Academic Appeals Policy.</li>
+                </ol>
+
+                <h2>5. Financial Aid and Title IV Implications</h2>
+                <h3>A. Enrollment Status</h3>
+                <p>Adding or dropping courses can affect a student's:</p>
+                <ul>
+                    <li>Enrollment level (full-time, three-quarter-time, half-time, or less than half-time);</li>
+                    <li>Eligibility for financial aid disbursement; and</li>
+                    <li>Pace of completion for Satisfactory Academic Progress (SAP).</li>
+                </ul>
+
+                <h3>B. Return of Title IV (R2T4)</h3>
+                <p>Students receiving federal financial aid who drop below full-time or withdraw from all courses may be
+                    subject to R2T4 calculations per 34 CFR §668.22.</p>
+                <p>Unearned aid must be returned to the U.S. Department of Education and may result in a balance owed to
+                    Freedom College of Excellence.</p>
+
+                <h3>C. Tuition Adjustments</h3>
+                <p>Tuition adjustments related to dropped or added courses are governed by the College's Tuition and
+                    Fees Adjustment and Refund Policy. Students are responsible for any additional costs associated with
+                    added coursework.</p>
+
+                <h2>Compliance References</h2>
+                <ul>
+                    <li>34 CFR §668.22 – Return of Title IV Funds (R2T4)</li>
+                    <li>34 CFR §668.34 – Satisfactory Academic Progress (SAP)</li>
+                    <li>34 CFR §668.164 – Disbursement of Title IV Funds</li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="transfer-student-policy.html">Transfer
+                                Students</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="international-admissions-policy.html">International</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 - Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top 90%" },
+                opacity: 1, y: 0, duration: 1, ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

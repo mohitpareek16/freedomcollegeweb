@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Satisfactory Academic Progress (SAP) Policy - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: "#0A1F44", deep: "#08182E" },
+                        gold: { DEFAULT: "#D4AF37", light: "#E8C971" },
+                        teal: { DEFAULT: "#1FA2A8" },
+                        cream: "#FAF9F6",
+                        light: "#F5F5F0",
+                        text: { primary: "#2B2B2B", secondary: "#5A5A5A" }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="#" class="hover:text-gold transition-colors">Financial Aid</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Satisfactory Academic Progress</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Satisfactory Academic Progress (SAP)
+            </h1>
+            <p class="text-xl text-gold font-display italic">Maintaining Financial Aid Eligibility</p>
+        </div>
+    </section>
+
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+
+                <h2>Purpose</h2>
+                <p>The Satisfactory Academic Progress (SAP) Policy establishes academic standards that students must
+                    meet to remain eligible for federal, state, and institutional financial aid at Freedom College of
+                    Excellence.</p>
+                <p>This policy ensures compliance with Title IV of the Higher Education Act (34 CFR §668.34) and
+                    supports student success by promoting timely degree completion and academic achievement.</p>
+
+                <h2>Scope</h2>
+                <p>This policy applies to all students enrolled in degree or certificate programs who receive or apply
+                    for federal student aid (Title IV), state aid, or institutional scholarships and grants.</p>
+                <p>SAP is evaluated for all students regardless of whether they previously received financial aid.</p>
+
+                <h2>Policy Statement</h2>
+                <p>To maintain financial aid eligibility, students must demonstrate Satisfactory Academic Progress by
+                    meeting qualitative (GPA), quantitative (completion rate), and maximum timeframe requirements.</p>
+                <p>SAP is evaluated at the end of each payment period (semester or term). Students who fail to meet SAP
+                    standards will be placed on Financial Aid Warning, Financial Aid Suspension, or may regain
+                    eligibility through an approved SAP Appeal.</p>
+
+                <h2>SAP Standards</h2>
+                <p>Students must meet all three of the following standards:</p>
+
+                <h3>1. Qualitative Standard: Minimum Cumulative GPA</h3>
+                <table class="min-w-full border border-gray-300">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="border border-gray-300 px-4 py-2">Program Level</th>
+                            <th class="border border-gray-300 px-4 py-2">Minimum Cumulative GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Undergraduate</td>
+                            <td class="border border-gray-300 px-4 py-2">2.0</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Graduate</td>
+                            <td class="border border-gray-300 px-4 py-2">3.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2. Quantitative Standard: Completion Rate (Pace)</h3>
+                <p>Students must successfully complete at least <strong>67%</strong> of all attempted credit hours.</p>
+                <p><strong>Formula:</strong> (Earned Credits ÷ Attempted Credits) ≥ 67%</p>
+                <p><strong>Includes:</strong></p>
+                <ul>
+                    <li>All courses attempted at Freedom College of Excellence;</li>
+                    <li>Transfer credits accepted toward the student's program;</li>
+                    <li>Withdrawals (W), Incompletes (I), and Failing grades (F).</li>
+                </ul>
+                <p><strong>Excludes:</strong> Audited courses, courses dropped during the Add/Drop Period.</p>
+
+                <h3>3. Maximum Timeframe</h3>
+                <p>Students must complete their degree or certificate within <strong>150%</strong> of the published
+                    program length.</p>
+                <table class="min-w-full border border-gray-300 mt-4">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="border border-gray-300 px-4 py-2">Program Type</th>
+                            <th class="border border-gray-300 px-4 py-2">Published Length</th>
+                            <th class="border border-gray-300 px-4 py-2">Maximum Timeframe (150%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Associate Degree</td>
+                            <td class="border border-gray-300 px-4 py-2">60 credits</td>
+                            <td class="border border-gray-300 px-4 py-2">90 credits</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Bachelor's Degree</td>
+                            <td class="border border-gray-300 px-4 py-2">120 credits</td>
+                            <td class="border border-gray-300 px-4 py-2">180 credits</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Master's Degree</td>
+                            <td class="border border-gray-300 px-4 py-2">36 credits</td>
+                            <td class="border border-gray-300 px-4 py-2">54 credits</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>SAP Evaluation</h2>
+                <p>SAP is reviewed at the end of each payment period (semester or term) by the Financial Aid Office.</p>
+                <ul>
+                    <li>All coursework at Freedom College of Excellence is included in the calculation;</li>
+                    <li>Transfer credits accepted toward the student's program are included;</li>
+                    <li>Repeated courses count as both attempted and earned (only once if passed);</li>
+                    <li>Incompletes (I) and Withdrawals (W) count as attempted but not earned.</li>
+                </ul>
+
+                <h2>SAP Status Categories</h2>
+
+                <h3>1. Meeting SAP</h3>
+                <p>Students who meet all three SAP standards remain eligible for financial aid.</p>
+
+                <h3>2. Financial Aid Warning</h3>
+                <p>Students who fail to meet SAP for the first time are automatically placed on <strong>Financial Aid
+                        Warning</strong> for one payment period.</p>
+                <ul>
+                    <li>Financial aid eligibility continues during the Warning period;</li>
+                    <li>No appeal is required;</li>
+                    <li>Students must meet all SAP standards by the end of the Warning period to remain eligible.</li>
+                </ul>
+
+                <h3>3. Financial Aid Suspension</h3>
+                <p>Students who fail to meet SAP after the Warning period are placed on <strong>Financial Aid
+                        Suspension</strong> and lose eligibility for all Title IV, state, and institutional aid.</p>
+                <p>Students may regain eligibility by:</p>
+                <ul>
+                    <li>Successfully appealing their suspension; or</li>
+                    <li>Attending without aid until SAP standards are met.</li>
+                </ul>
+
+                <h2>SAP Appeal Process</h2>
+                <p>Students on Financial Aid Suspension may submit a written appeal if extenuating circumstances
+                    prevented them from meeting SAP.</p>
+
+                <h3>Grounds for Appeal:</h3>
+                <ul>
+                    <li>Serious illness or injury (student or immediate family member);</li>
+                    <li>Death of an immediate family member;</li>
+                    <li>Military deployment or service obligations;</li>
+                    <li>Other documented emergency or unusual circumstances.</li>
+                </ul>
+
+                <h3>Appeal Requirements:</h3>
+                <ol>
+                    <li>Submit a written appeal to the Financial Aid Office within 10 business days of suspension
+                        notice;</li>
+                    <li>Include a detailed explanation of the extenuating circumstances;</li>
+                    <li>Provide supporting documentation (e.g., medical records, death certificate, deployment orders);
+                    </li>
+                    <li>Submit an Academic Plan (developed with an Academic Advisor) outlining how the student will meet
+                        SAP by a specific deadline.</li>
+                </ol>
+
+                <h3>Appeal Outcomes:</h3>
+                <ul>
+                    <li><strong>Approved:</strong> Student is placed on Financial Aid Probation and must follow the
+                        Academic Plan;</li>
+                    <li><strong>Denied:</strong> Student remains on suspension; may reapply after completing coursework
+                        without aid to meet SAP.</li>
+                </ul>
+
+                <h2>Financial Aid Probation</h2>
+                <p>Students whose appeals are approved are placed on <strong>Financial Aid Probation</strong> for one
+                    payment period.</p>
+                <ul>
+                    <li>Financial aid is reinstated;</li>
+                    <li>Students must meet the conditions of their Academic Plan and/or meet all SAP standards by the
+                        end of the Probation period;</li>
+                    <li>Failure to comply results in immediate suspension.</li>
+                </ul>
+
+                <h2>Regaining Eligibility</h2>
+                <p>Students who lose aid due to SAP may regain eligibility by:</p>
+                <ul>
+                    <li>Successfully completing enough credits (without aid) to meet all three SAP standards; or</li>
+                    <li>Successfully appealing their suspension and meeting the terms of their Academic Plan.</li>
+                </ul>
+
+                <h2>Treatment of Grades and Credits</h2>
+                <table class="min-w-full border border-gray-300 mt-4">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="border border-gray-300 px-4 py-2">Grade/Status</th>
+                            <th class="border border-gray-300 px-4 py-2">Attempted</th>
+                            <th class="border border-gray-300 px-4 py-2">Earned</th>
+                            <th class="border border-gray-300 px-4 py-2">Affects GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">A, B, C, D</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">F</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">No</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">W (Withdrawal)</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">No</td>
+                            <td class="border border-gray-300 px-4 py-2">No</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">I (Incomplete)</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">No</td>
+                            <td class="border border-gray-300 px-4 py-2">No</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Transfer Credits</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes</td>
+                            <td class="border border-gray-300 px-4 py-2">No</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Repeated Courses</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes (each attempt)</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes (once if passed)</td>
+                            <td class="border border-gray-300 px-4 py-2">Yes (best grade)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Notification</h2>
+                <p>Students will be notified of their SAP status via:</p>
+                <ul>
+                    <li>Email to the official College email address;</li>
+                    <li>Written notice sent by postal mail; and</li>
+                    <li>Notification in the student portal.</li>
+                </ul>
+
+                <h2>Compliance References</h2>
+                <ul>
+                    <li>34 CFR §668.34 – Satisfactory Academic Progress (Title IV)</li>
+                    <li>34 CFR §668.16(e) – Institutional Eligibility</li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="transfer-student-policy.html">Transfer
+                                Students</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="international-admissions-policy.html">International</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top 90%" },
+                opacity: 1, y: 0, duration: 1, ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

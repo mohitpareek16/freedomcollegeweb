@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Grading Policy - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: "#0A1F44", deep: "#08182E" },
+                        gold: { DEFAULT: "#D4AF37", light: "#E8C971" },
+                        teal: { DEFAULT: "#1FA2A8" },
+                        cream: "#FAF9F6",
+                        text: { primary: "#2B2B2B", secondary: "#5A5A5A" }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#"><span
+                    class="material-symbols-outlined text-[14px]">favorite</span> Giving</a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="academic-policies.html" class="hover:text-gold transition-colors">Academic Policies</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Grading Policy</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Grading Policy</h1>
+            <p class="text-xl text-gold font-display italic">Academic Assessment Standards</p>
+        </div>
+    </section>
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+                <h2>Purpose</h2>
+                <p>The Grading Policy establishes consistent standards for evaluating and reporting student academic
+                    performance at Freedom College of Excellence. This policy ensures transparency, fairness, and
+                    compliance with federal and accreditation standards.</p>
+
+                <h2>Grading Scale</h2>
+                <p>Freedom College of Excellence uses a letter grade system with the following scale:</p>
+                <table class="min-w-full border border-gray-300 mt-4">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="border border-gray-300 px-4 py-2">Letter Grade</th>
+                            <th class="border border-gray-300 px-4 py-2">Percentage</th>
+                            <th class="border border-gray-300 px-4 py-2">Quality Points</th>
+                            <th class="border border-gray-300 px-4 py-2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">A</td>
+                            <td class="border px-4 py-2">93-100%</td>
+                            <td class="border px-4 py-2">4.0</td>
+                            <td class="border px-4 py-2">Excellent</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">A-</td>
+                            <td class="border px-4 py-2">90-92%</td>
+                            <td class="border px-4 py-2">3.7</td>
+                            <td class="border px-4 py-2">Excellent</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">B+</td>
+                            <td class="border px-4 py-2">87-89%</td>
+                            <td class="border px-4 py-2">3.3</td>
+                            <td class="border px-4 py-2">Good</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">B</td>
+                            <td class="border px-4 py-2">83-86%</td>
+                            <td class="border px-4 py-2">3.0</td>
+                            <td class="border px-4 py-2">Good</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">B-</td>
+                            <td class="border px-4 py-2">80-82%</td>
+                            <td class="border px-4 py-2">2.7</td>
+                            <td class="border px-4 py-2">Good</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">C+</td>
+                            <td class="border px-4 py-2">77-79%</td>
+                            <td class="border px-4 py-2">2.3</td>
+                            <td class="border px-4 py-2">Satisfactory</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">C</td>
+                            <td class="border px-4 py-2">73-76%</td>
+                            <td class="border px-4 py-2">2.0</td>
+                            <td class="border px-4 py-2">Satisfactory</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">C-</td>
+                            <td class="border px-4 py-2">70-72%</td>
+                            <td class="border px-4 py-2">1.7</td>
+                            <td class="border px-4 py-2">Satisfactory</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">D+</td>
+                            <td class="border px-4 py-2">67-69%</td>
+                            <td class="border px-4 py-2">1.3</td>
+                            <td class="border px-4 py-2">Poor</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">D</td>
+                            <td class="border px-4 py-2">63-66%</td>
+                            <td class="border px-4 py-2">1.0</td>
+                            <td class="border px-4 py-2">Poor</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">D-</td>
+                            <td class="border px-4 py-2">60-62%</td>
+                            <td class="border px-4 py-2">0.7</td>
+                            <td class="border px-4 py-2">Poor</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">F</td>
+                            <td class="border px-4 py-2">0-59%</td>
+                            <td class="border px-4 py-2">0.0</td>
+                            <td class="border px-4 py-2">Failing</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Additional Grade Notations</h2>
+                <ul>
+                    <li><strong>W (Withdrawal):</strong> Student withdrew from course after Add/Drop Period; does not
+                        affect GPA</li>
+                    <li><strong>I (Incomplete):</strong> Temporary grade for extenuating circumstances; must be resolved
+                        within one semester</li>
+                    <li><strong>P (Pass):</strong> Passing grade in pass/fail courses; does not affect GPA</li>
+                    <li><strong>NP (No Pass):</strong> Failing grade in pass/fail courses; does not affect GPA but
+                        counts as attempted hours</li>
+                    <li><strong>AU (Audit):</strong> Student attended course without credit; does not affect GPA or
+                        count toward degree</li>
+                    <li><strong>IP (In Progress):</strong> For multi-term courses; replaced with final grade upon
+                        completion</li>
+                </ul>
+
+                <h2>Grade Point Average (GPA) Calculation</h2>
+                <p><strong>Formula:</strong> GPA = (Total Quality Points) ÷ (Total Credits Attempted)</p>
+                <p><strong>Example:</strong></p>
+                <ul>
+                    <li>Course 1: A (4.0) × 3 credits = 12.0 quality points</li>
+                    <li>Course 2: B (3.0) × 4 credits = 12.0 quality points</li>
+                    <li>Course 3: C+ (2.3) × 3 credits = 6.9 quality points</li>
+                    <li><strong>Total:</strong> 30.9 quality points ÷ 10 credits = <strong>3.09 GPA</strong></li>
+                </ul>
+
+                <h2>Incomplete Grades</h2>
+                <p>An Incomplete (I) grade may be assigned when:</p>
+                <ul>
+                    <li>A student is unable to complete coursework due to extenuating circumstances beyond their
+                        control;</li>
+                    <li>The student has completed at least 75% of course requirements with a passing grade;</li>
+                    <li>The instructor and student agree on a completion plan.</li>
+                </ul>
+                <p><strong>Resolution:</strong> Incomplete grades must be resolved within one semester. If not resolved,
+                    the "I" automatically converts to an "F".</p>
+
+                <h2>Repeated Courses</h2>
+                <p>Students may repeat courses to improve their grade. The highest grade earned will be used in GPA
+                    calculation, but all attempts remain on the transcript.</p>
+
+                <h2>Grade Appeals</h2>
+                <p>Students who believe a grade was assigned in error may appeal following the Academic Grievance
+                    Policy.</p>
+
+                <h2>Compliance References</h2>
+                <ul>
+                    <li>34 CFR §668.34 – Satisfactory Academic Progress</li>
+                    <li>34 CFR §600.2 – Definition of Academic Credit</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="transfer-student-policy.html">Transfer
+                                Students</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, { scrollTrigger: { trigger: el, start: "top 90%" }, opacity: 1, y: 0, duration: 1, ease: "power2.out" });
+        });
+    </script>
+</body>
+
+</html>

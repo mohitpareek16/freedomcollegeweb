@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Scholarships & Merit-Based Awards - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: "#0A1F44", deep: "#08182E" },
+                        gold: { DEFAULT: "#D4AF37", light: "#E8C971" },
+                        teal: { DEFAULT: "#1FA2A8" },
+                        cream: "#FAF9F6",
+                        light: "#F5F5F0",
+                        text: { primary: "#2B2B2B", secondary: "#5A5A5A" }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="#" class="hover:text-gold transition-colors">Financial Aid</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Scholarships & Merit-Based Awards</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Scholarships & Merit-Based Awards</h1>
+            <p class="text-xl text-gold font-display italic">Recognizing Academic Excellence</p>
+        </div>
+    </section>
+
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+
+                <h2>Purpose</h2>
+                <p>Freedom College of Excellence is committed to recognizing and supporting exceptional students through
+                    institutional scholarships and merit-based awards. These awards are designed to reward academic
+                    achievement, leadership, community involvement, and specialized talents.</p>
+                <p>This policy outlines eligibility criteria, application procedures, award amounts, renewal
+                    requirements, and administrative guidelines for all institutional scholarships and merit-based
+                    awards.</p>
+
+                <h2>Scope</h2>
+                <p>This policy applies to all prospective and currently enrolled students seeking or receiving
+                    institutional scholarships or merit-based awards at Freedom College of Excellence, including
+                    undergraduate, graduate, and certificate programs.</p>
+
+                <h2>Policy Statement</h2>
+                <p>Freedom College of Excellence offers competitive merit-based scholarships to recognize academic
+                    excellence, leadership potential, and student achievements. Scholarships are awarded based on
+                    objective criteria and are subject to annual renewal contingent upon the student maintaining
+                    satisfactory academic progress and meeting program-specific requirements.</p>
+                <p>All scholarship decisions are made by the Scholarship Committee in accordance with established
+                    guidelines and available institutional funding.</p>
+
+                <h2>Types of Scholarships and Awards</h2>
+
+                <h3>1. Presidential Scholarship</h3>
+                <p><strong>Award Amount:</strong> Full tuition (up to $20,000 per year)</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Incoming freshmen with a minimum 3.8 GPA and 1400 SAT or 30 ACT;</li>
+                    <li>Demonstrated leadership and community service;</li>
+                    <li>Full-time enrollment required.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.5 GPA and full-time enrollment.</p>
+
+                <h3>2. Dean's Scholarship</h3>
+                <p><strong>Award Amount:</strong> $15,000 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Incoming freshmen with a minimum 3.5 GPA and 1300 SAT or 27 ACT;</li>
+                    <li>Strong academic record and extracurricular involvement;</li>
+                    <li>Full-time enrollment required.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.25 GPA and full-time enrollment.</p>
+
+                <h3>3. Academic Excellence Scholarship</h3>
+                <p><strong>Award Amount:</strong> $10,000 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Incoming freshmen with a minimum 3.3 GPA and 1200 SAT or 24 ACT;</li>
+                    <li>Evidence of academic achievement;</li>
+                    <li>Full-time enrollment required.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.0 GPA and full-time enrollment.</p>
+
+                <h3>4. Transfer Student Scholarship</h3>
+                <p><strong>Award Amount:</strong> $5,000 - $12,000 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Transfer students with a minimum 3.0 college GPA;</li>
+                    <li>At least 24 transferable credit hours;</li>
+                    <li>Full-time enrollment required.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.0 GPA and full-time enrollment.</p>
+
+                <h3>5. Graduate Merit Scholarship</h3>
+                <p><strong>Award Amount:</strong> $3,000 - $8,000 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Admitted graduate students with a minimum 3.5 undergraduate GPA;</li>
+                    <li>Strong academic references and statement of purpose;</li>
+                    <li>Enrollment in a minimum of 6 credit hours per term.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.5 graduate GPA.</p>
+
+                <h3>6. Diversity and Inclusion Scholarship</h3>
+                <p><strong>Award Amount:</strong> $7,500 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Students who demonstrate a commitment to diversity, equity, and inclusion;</li>
+                    <li>Minimum 3.0 GPA;</li>
+                    <li>Essay requirement on diversity and inclusion topics.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.0 GPA and continued engagement in
+                    diversity initiatives.</p>
+
+                <h3>7. STEM Leadership Award</h3>
+                <p><strong>Award Amount:</strong> $6,000 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Students majoring in Science, Technology, Engineering, or Mathematics;</li>
+                    <li>Minimum 3.2 GPA;</li>
+                    <li>Evidence of STEM-related extracurricular activities or research.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Maintain a cumulative 3.0 GPA in STEM coursework and remain in
+                    a STEM major.</p>
+
+                <h3>8. Community Service Award</h3>
+                <p><strong>Award Amount:</strong> $4,000 per year</p>
+                <p><strong>Eligibility:</strong></p>
+                <ul>
+                    <li>Students with demonstrated commitment to community service (minimum 100 service hours);</li>
+                    <li>Minimum 3.0 GPA;</li>
+                    <li>Letters of recommendation from community organizations.</li>
+                </ul>
+                <p><strong>Renewal Requirements:</strong> Complete at least 50 hours of community service per year and
+                    maintain a 3.0 GPA.</p>
+
+                <h2>Application Process</h2>
+
+                <h3>For Incoming Freshmen:</h3>
+                <ol>
+                    <li>Submit a completed application for admission by the priority deadline (December 1 for Fall,
+                        October 1 for Spring);</li>
+                    <li>All admitted students are automatically considered for merit scholarships based on their
+                        application materials;</li>
+                    <li>No separate scholarship application is required for Presidential, Dean's, or Academic Excellence
+                        Scholarships.</li>
+                </ol>
+
+                <h3>For Transfer Students:</h3>
+                <ol>
+                    <li>Submit a completed transfer application by the priority deadline;</li>
+                    <li>Official transcripts from all previously attended institutions must be received;</li>
+                    <li>Automatic consideration for Transfer Student Scholarship.</li>
+                </ol>
+
+                <h3>For Graduate Students:</h3>
+                <ol>
+                    <li>Submit a completed graduate application including official transcripts, letters of
+                        recommendation, and statement of purpose;</li>
+                    <li>Graduate Merit Scholarships are awarded by individual graduate programs based on academic
+                        qualifications.</li>
+                </ol>
+
+                <h3>For Specialized Awards (Diversity, STEM, Community Service):</h3>
+                <ol>
+                    <li>Submit a separate scholarship application available through the Financial Aid Office or student
+                        portal;</li>
+                    <li>Include required essays, letters of recommendation, and documentation of eligibility criteria;
+                    </li>
+                    <li>Application deadline: March 1 (for Fall term), October 1 (for Spring term).</li>
+                </ol>
+
+                <h2>Award Notification</h2>
+                <p>Scholarship recipients will be notified via:</p>
+                <ul>
+                    <li>Official award letter sent by email and postal mail;</li>
+                    <li>Award details posted in the student portal;</li>
+                    <li>Financial aid package update.</li>
+                </ul>
+                <p>Notification timeline:</p>
+                <ul>
+                    <li><strong>Freshmen:</strong> Within 2 weeks of admission decision;</li>
+                    <li><strong>Transfer Students:</strong> Within 3 weeks of admission decision;</li>
+                    <li><strong>Graduate Students:</strong> Within 4 weeks of admission decision;</li>
+                    <li><strong>Specialized Awards:</strong> By April 15 (Fall) or November 15 (Spring).</li>
+                </ul>
+
+                <h2>Renewal and Continuation</h2>
+                <p>Most institutional scholarships are renewable for up to four years (eight semesters) for
+                    undergraduates and two years (four semesters) for graduate students, provided the following
+                    conditions are met:</p>
+
+                <h3>General Renewal Requirements:</h3>
+                <ul>
+                    <li>Maintain the minimum cumulative GPA specified for each scholarship;</li>
+                    <li>Enroll full-time (12+ credits for undergraduates; 6+ credits for graduate students) unless
+                        approved for part-time status;</li>
+                    <li>Maintain Satisfactory Academic Progress (SAP) as defined by the College's SAP Policy;</li>
+                    <li>Remain in good academic and disciplinary standing;</li>
+                    <li>Complete any program-specific requirements (e.g., community service hours, research
+                        participation).</li>
+                </ul>
+
+                <h3>Probation and Loss of Scholarship:</h3>
+                <ul>
+                    <li>Students who fall below the required GPA will be placed on <strong>Scholarship
+                            Probation</strong> for one semester;</li>
+                    <li>During probation, the scholarship is retained, but the student must meet the GPA requirement by
+                        the end of the probationary term;</li>
+                    <li>Failure to meet requirements after probation results in permanent loss of the scholarship;</li>
+                    <li>Scholarships lost due to academic performance cannot be reinstated.</li>
+                </ul>
+
+                <h2>Stacking and Combining Awards</h2>
+                <p>Students may receive multiple institutional scholarships, but total scholarship and grant aid cannot
+                    exceed the cost of tuition and fees. If combined awards exceed tuition, the excess will be applied
+                    to room, board, and other educational expenses.</p>
+                <p>Institutional scholarships may be combined with federal, state, and external aid, subject to federal
+                    and state regulations.</p>
+
+                <h2>Impact on Financial Aid</h2>
+                <p>Institutional scholarships reduce the student's financial need and may impact need-based aid
+                    eligibility, including federal grants and work-study. The Financial Aid Office will recalculate the
+                    student's financial aid package upon scholarship award.</p>
+
+                <h2>Appeals and Special Circumstances</h2>
+                <p>Students who experience extenuating circumstances (e.g., serious illness, family emergency) that
+                    impact their ability to meet renewal requirements may submit a written appeal to the Scholarship
+                    Committee.</p>
+
+                <h3>Appeal Requirements:</h3>
+                <ol>
+                    <li>Submit a formal written appeal within 15 business days of notification of scholarship loss or
+                        probation;</li>
+                    <li>Include documentation of extenuating circumstances;</li>
+                    <li>Provide an academic plan developed with an Academic Advisor;</li>
+                    <li>Appeals are reviewed on a case-by-case basis; decisions are final.</li>
+                </ol>
+
+                <h2>Compliance and Administrative Guidelines</h2>
+                <ul>
+                    <li>All scholarships are subject to availability of institutional funds;</li>
+                    <li>The College reserves the right to modify scholarship amounts, criteria, and renewal requirements
+                        with appropriate notice;</li>
+                    <li>Scholarships are awarded on a competitive basis; meeting minimum criteria does not guarantee an
+                        award;</li>
+                    <li>Scholarship funds are applied directly to the student's account and cannot be disbursed as cash.
+                    </li>
+                </ul>
+
+                <h2>Contact Information</h2>
+                <p>For questions regarding institutional scholarships and merit-based awards, contact:</p>
+                <p><strong>Financial Aid Office</strong><br>
+                    Email: <a href="mailto:financialaid@freedomcollege.edu">financialaid@freedomcollege.edu</a><br>
+                    Phone: (555) 123-4567<br>
+                    Office Hours: Monday-Friday, 9:00 AM - 5:00 PM</p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="transfer-student-policy.html">Transfer
+                                Students</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="international-admissions-policy.html">International</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top 90%" },
+                opacity: 1, y: 0, duration: 1, ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

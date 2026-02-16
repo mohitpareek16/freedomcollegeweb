@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Course Numbering System - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>tailwind.config = { theme: { extend: { colors: { navy: { DEFAULT: "#0A1F44", deep: "#08182E" }, gold: { DEFAULT: "#D4AF37" }, cream: "#FAF9F6", text: { primary: "#2B2B2B", secondary: "#5A5A5A" } }, fontFamily: { sans: ["Lato", "sans-serif"], serif: ["Libre Baskerville", "serif"], display: ["Cormorant Garamond", "serif"] } } } }</script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6"><a
+                class="hover:text-gold transition-colors" href="#">Alumni</a><a
+                class="hover:text-gold transition-colors" href="#">Student Portal</a></div>
+    </div>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24"><a class="flex items-center gap-4"
+                    href="index.html"><img src="images/logo.jpg" alt="Freedom College Logo"
+                        class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1><span
+                            class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4"><a
+                        class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a><a
+                        class="bg-gold text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a></div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2"><a href="index.html"
+                    class="hover:text-gold transition-colors">Home</a><span
+                    class="material-symbols-outlined text-xs">chevron_right</span><a href="academic-policies.html"
+                    class="hover:text-gold transition-colors">Academic Policies</a><span
+                    class="material-symbols-outlined text-xs">chevron_right</span><span class="text-white">Course
+                    Numbering</span></nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Course Numbering System</h1>
+            <p class="text-xl text-gold font-display italic">Understanding Course Codes</p>
+        </div>
+    </section>
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+                <h2>Overview</h2>
+                <p>The course numbering system at Freedom College of Excellence provides a standardized method for
+                    identifying courses by discipline, level, and sequence. Understanding this system helps students
+                    plan their academic path and select appropriate courses.</p>
+
+                <h2>Course Code Structure</h2>
+                <p><strong>Format:</strong> PREFIX ### (Letter)</p>
+                <p><strong>Example:</strong> ENG 101<br>
+                    <strong>ENG</strong> = Subject/Department Prefix<br>
+                    <strong>101</strong> = Course Level and Sequence<br>
+                    <strong>(Optional Letter)</strong> = Lab or Section Designator
+                </p>
+
+                <h2>Subject Prefixes</h2>
+                <p>The three- or four-letter prefix indicates the academic discipline or department. Common prefixes
+                    include:</p>
+                <table class="min-w-full border border-gray-300">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="border px-4 py-2">Prefix</th>
+                            <th class="border px-4 py-2">Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">ENG</td>
+                            <td class="border px-4 py-2">English</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">MAT</td>
+                            <td class="border px-4 py-2">Mathematics</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">BIO</td>
+                            <td class="border px-4 py-2">Biology</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">CHE</td>
+                            <td class="border px-4 py-2">Chemistry</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">PSY</td>
+                            <td class="border px-4 py-2">Psychology</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">HIS</td>
+                            <td class="border px-4 py-2">History</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">BUS</td>
+                            <td class="border px-4 py-2">Business</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">COM</td>
+                            <td class="border px-4 py-2">Communication</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>See the Academic Catalog for a complete list of subject prefixes.</p>
+
+                <h2>Course Numbering Levels</h2>
+                <table class="min-w-full border border-gray-300 mt-4">
+                    <thead>
+                        <tr class="bg-navy text-white">
+                            <th class="border px-4 py-2">Number Range</th>
+                            <th class="border px-4 py-2">Level</th>
+                            <th class="border px-4 py-2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">001-099</td>
+                            <td class="border px-4 py-2">Developmental</td>
+                            <td class="border px-4 py-2">Non-credit remedial courses; do not count toward degree</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">100-199</td>
+                            <td class="border px-4 py-2">Freshman/Introductory</td>
+                            <td class="border px-4 py-2">Lower-division courses; typically no prerequisites</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">200-299</td>
+                            <td class="border px-4 py-2">Sophomore/Intermediate</td>
+                            <td class="border px-4 py-2">Lower-division courses; may have prerequisites</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">300-399</td>
+                            <td class="border px-4 py-2">Junior/Advanced</td>
+                            <td class="border px-4 py-2">Upper-division courses; usually require prerequisites</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">400-499</td>
+                            <td class="border px-4 py-2">Senior/Specialized</td>
+                            <td class="border px-4 py-2">Upper-division courses; significant prerequisites</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">500-599</td>
+                            <td class="border px-4 py-2">Graduate Level I</td>
+                            <td class="border px-4 py-2">Master's level courses; graduate admission required</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">600-699</td>
+                            <td class="border px-4 py-2">Graduate Level II</td>
+                            <td class="border px-4 py-2">Advanced master's coursework, thesis, capstone</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Specific Number Meanings</h2>
+
+                <h3>X01 - X02: Course Sequences</h3>
+                <p>Courses ending in 01 and 02 typically indicate a two-semester sequence:</p>
+                <ul>
+                    <li>ENG 101 - English Composition I</li>
+                    <li>ENG 102 - English Composition II</li>
+                </ul>
+
+                <h3>X90-X99: Special Topics & Capstone</h3>
+                <ul>
+                    <li><strong>X90-X94:</strong> Special Topics courses (content varies by semester)</li>
+                    <li><strong>X95:</strong> Independent Study</li>
+                    <li><strong>X96:</strong> Internship/Practicum</li>
+                    <li><strong>X98:</strong> Senior Seminar/Capstone</li>
+                    <li><strong>X99:</strong> Thesis or Research Project</li>
+                </ul>
+
+                <h3>Letter Suffixes</h3>
+                <ul>
+                    <li><strong>L:</strong> Laboratory component (e.g., CHE 101L - Chemistry Lab)</li>
+                    <li><strong>H:</strong> Honors section</li>
+                    <li><strong>W:</strong> Writing Intensive</li>
+                    <li><strong>D:</strong> Diversity/Global Studies designation</li>
+                </ul>
+
+                <h2>Lower Division vs. Upper Division</h2>
+                <p><strong>Lower Division:</strong> 100-200 level courses. Foundational knowledge, typically taken in
+                    first two years.</p>
+                <p><strong>Upper Division:</strong> 300-400 level courses. Advanced study within a discipline, typically
+                    taken in final two years. Bachelor's degrees require a minimum of 45 upper-division credits.</p>
+
+                <h2>Credit Hours</h2>
+                <p>Credit hours are indicated in parentheses in the course catalog:</p>
+                <ul>
+                    <li>ENG 101 (3) - 3 credit hours</li>
+                    <li>BIO 101 (4) - 4 credit hours (typically includes lab)</li>
+                </ul>
+
+                <h2>Course Repeats and Variations</h2>
+                <p>Courses with the same prefix and number but different titles may indicate:</p>
+                <ul>
+                    <li><strong>Variable Content:</strong> Special Topics courses that change each semester;</li>
+                    <li><strong>Repeatable Courses:</strong> Some courses (e.g., applied music, studio art) may be
+                        repeated for credit.</li>
+                </ul>
+                <p>Check the course description for repeatability status.</p>
+
+                <h2>Example Course Breakdown</h2>
+                <p><strong>PSY 301H - Abnormal Psychology (Honors Section) (3 credits)</strong></p>
+                <ul>
+                    <li><strong>PSY:</strong> Psychology Department</li>
+                    <li><strong>301:</strong> Junior-level (300 series), upper-division</li>
+                    <li><strong>H:</strong> Honors section</li>
+                    <li><strong>(3):</strong> 3 credit hours</li>
+                </ul>
+
+                <h2>Contact</h2>
+                <p><strong>Office of the Registrar</strong><br>
+                    Email: <a href="mailto:registrar@freedomcollege.edu">registrar@freedomcollege.edu</a><br>
+                    Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2"><input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold"><button
+                            class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8"><a class="hover:text-white transition-colors"
+                        href="academic-policies.html">Policies</a><a class="hover:text-white transition-colors"
+                        href="ferpa-policy.html">FERPA</a><a class="hover:text-white transition-colors"
+                        href="grievance-policy.html">Grievance</a><a class="hover:text-white transition-colors"
+                        href="tuition-and-fees-policy.html">Tuition & Fees</a><a
+                        class="hover:text-white transition-colors" href="#">Contact</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

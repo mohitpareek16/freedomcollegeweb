@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Delinquent Accounts Policy - Freedom College of Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: "#0A1F44",
+                            deep: "#08182E",
+                        },
+                        gold: {
+                            DEFAULT: "#D4AF37",
+                            light: "#E8C971",
+                        },
+                        teal: {
+                            DEFAULT: "#1FA2A8",
+                        },
+                        cream: "#FAF9F6",
+                        light: "#F5F5F0",
+                        text: {
+                            primary: "#2B2B2B",
+                            secondary: "#5A5A5A",
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Lato", "sans-serif"],
+                        serif: ["Libre Baskerville", "serif"],
+                        display: ["Cormorant Garamond", "serif"],
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1F44;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+
+<body class="bg-cream text-text-primary antialiased font-sans">
+    <!-- Top Bar -->
+    <div class="bg-navy-deep text-white/80 text-[11px] uppercase tracking-widest font-sans border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 h-10 flex justify-end items-center gap-6">
+            <a class="hover:text-gold transition-colors" href="#">Alumni</a>
+            <a class="hover:text-gold transition-colors" href="#">Faculty & Staff</a>
+            <a class="hover:text-gold transition-colors" href="#">Parents</a>
+            <a class="hover:text-gold transition-colors flex items-center gap-1" href="#">
+                <span class="material-symbols-outlined text-[14px]">favorite</span> Giving
+            </a>
+            <a class="hover:text-gold transition-colors ml-4 border-l border-white/20 pl-6" href="#">Student Portal</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center gap-4" href="index.html">
+                    <img src="images/logo.jpg" alt="Freedom College Logo" class="size-16 object-contain">
+                    <div class="flex flex-col">
+                        <h1 class="font-serif text-navy text-xl font-bold uppercase">Freedom College</h1>
+                        <span class="font-display text-text-secondary text-sm italic">of Excellence</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-4">
+                    <a class="border border-navy text-navy hover:bg-navy hover:text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all"
+                        href="#">Request Info</a>
+                    <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md transition-all"
+                        href="#">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-navy-deep py-20 border-b border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <nav class="text-sm text-white/60 mb-6 flex items-center gap-2">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <a href="#" class="hover:text-gold transition-colors">Tuition & Aid</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-white">Delinquent Accounts Policy</span>
+            </nav>
+            <h1 class="font-serif text-5xl md:text-6xl text-white font-bold mb-4">Delinquent Accounts Policy</h1>
+            <p class="text-xl text-gold font-display italic">Outstanding Balance Management</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="prose prose-lg max-w-none">
+
+                <h2>Purpose</h2>
+                <p>The purpose of this policy is to establish clear expectations and procedures for the timely payment
+                    of student account balances and to define the consequences of delinquent accounts at Freedom College
+                    of Excellence.</p>
+                <p>The policy promotes responsible financial behavior while ensuring that the College can maintain sound
+                    fiscal operations. It also outlines due process measures to protect student rights related to
+                    delinquent balances.</p>
+
+                <h2>Scope</h2>
+                <p>This policy applies to all students enrolled in credit-bearing programs at Freedom College of
+                    Excellence, including undergraduate, graduate, and certificate programs. The policy also applies to
+                    students who have withdrawn, graduated, or otherwise ceased enrollment but maintain an outstanding
+                    balance with the College.</p>
+
+                <h2>Policy Statement</h2>
+                <p>Students are financially responsible for all tuition, fees, and other charges incurred while enrolled
+                    at Freedom College of Excellence. All student account balances must be paid in full by the published
+                    payment deadlines each term.</p>
+                <p>Failure to satisfy account balances in a timely manner will result in a delinquent account status,
+                    which may lead to late fees, restrictions on services, withholding of academic records, referral to
+                    collections, and other actions outlined in this policy.</p>
+
+                <h2>1. Definition of a Delinquent Account</h2>
+                <p>A student account is considered <strong>delinquent</strong> when any of the following conditions
+                    apply:</p>
+                <ul>
+                    <li>The account balance is past due (beyond the payment deadline established by the Bursar's
+                        Office);</li>
+                    <li>The student has not enrolled in an approved payment plan or their payment plan is in default;
+                    </li>
+                    <li>Expected financial aid or third-party payments have not been disbursed or received as
+                        anticipated;</li>
+                    <li>The student owes a balance from a prior term that was not resolved before the start of a new
+                        term.</li>
+                </ul>
+
+                <h2>2. Financial Responsibilities and Payment Obligations</h2>
+                <h3>A. Responsibility for Payment</h3>
+                <p>Students are responsible for ensuring that all tuition, fees, and charges are paid by the deadline,
+                    regardless of financial aid or scholarship status.</p>
+                <p>Students receiving financial aid must:</p>
+                <ul>
+                    <li>Meet all required documentation deadlines;</li>
+                    <li>Maintain Satisfactory Academic Progress (SAP); and</li>
+                    <li>Be enrolled at least half-time if receiving Title IV aid.</li>
+                </ul>
+                <p>If financial aid does not fully cover tuition and fees, the student is responsible for the remaining
+                    balance.</p>
+
+                <h3>B. Payment Deadlines</h3>
+                <p>Payment deadlines are established each term and are published in the Academic Calendar and student
+                    billing statements. Students must:</p>
+                <ul>
+                    <li>Pay the full balance by the published deadline; or</li>
+                    <li>Enroll in an approved College Payment Plan before the deadline; or</li>
+                    <li>Confirm financial aid sufficient to cover the full amount by the deadline.</li>
+                </ul>
+
+                <h2>3. Consequences of a Delinquent Account</h2>
+                <p>Students with delinquent accounts will be subject to the following actions:</p>
+
+                <h3>A. Late Fees</h3>
+                <p>A late fee of $50 per month will be assessed on any unpaid balance after the payment deadline. Late
+                    fees accrue monthly until the balance is paid in full.</p>
+
+                <h3>B. Academic Hold</h3>
+                <p>A hold will be placed on the student's account, which prevents the student from:</p>
+                <ul>
+                    <li>Registering for future courses;</li>
+                    <li>Receiving official transcripts;</li>
+                    <li>Receiving diplomas or degrees;</li>
+                    <li>Accessing certain College services (e.g., housing assignments, meal plans, library borrowing).
+                    </li>
+                </ul>
+
+                <h3>C. Enrollment Cancellation</h3>
+                <p>If a student's account is delinquent at the end of the Add/Drop Period for the current term, the
+                    College reserves the right to cancel the student's enrollment for that term.</p>
+                <p>Students will be notified in writing via email and postal mail of pending cancellation. A final
+                    notice will be provided at least 10 business days before cancellation takes effect.</p>
+
+                <h3>D. Withholding of Academic Records</h3>
+                <p>Students with delinquent accounts will not be issued official transcripts, diplomas, or enrollment
+                    verifications until the balance is paid in full or a satisfactory payment arrangement has been made.
+                </p>
+
+                <h3>E. Referral to Collections</h3>
+                <p>Accounts that remain delinquent for 90 days after the due date may be referred to an external
+                    collection agency. Once referred:</p>
+                <ul>
+                    <li>Collection fees (up to 33% of the outstanding balance) may be added to the total amount owed;
+                    </li>
+                    <li>The delinquent account may be reported to credit bureaus, which may negatively impact the
+                        student's credit score;</li>
+                    <li>Further legal action, including civil judgment and wage garnishment, may be pursued in
+                        accordance with applicable law.</li>
+                </ul>
+
+                <h3>F. Loss of Financial Aid Eligibility</h3>
+                <p>Students with delinquent accounts may lose eligibility for future financial aid disbursements and may
+                    be required to resolve all outstanding balances before receiving any federal, state, or
+                    institutional aid in subsequent terms.</p>
+
+                <h2>4. Payment Plan Options</h2>
+                <p>Students with balances exceeding $500 may enroll in a College-approved Payment Plan administered by
+                    the Bursar's Office.</p>
+
+                <h3>Enrollment Requirements:</h3>
+                <ul>
+                    <li>Submit a Payment Plan Agreement before the term's payment deadline;</li>
+                    <li>Pay a non-refundable enrollment fee ($25 per term);</li>
+                    <li>Make an initial down payment (typically 25% of the total balance);</li>
+                    <li>Agree to monthly installments spread across the term.</li>
+                </ul>
+
+                <h3>Default on Payment Plan:</h3>
+                <p>Failure to make timely monthly payments results in default. Upon default:</p>
+                <ul>
+                    <li>Late fees apply to missed payments;</li>
+                    <li>The student's account is moved to delinquent status;</li>
+                    <li>All consequences outlined in Section 3 may apply.</li>
+                </ul>
+
+                <h2>5. Account Resolution</h2>
+                <h3>A. Full Payment</h3>
+                <p>Students may pay the full balance at any time to resolve a delinquent account. Acceptable payment
+                    methods include:</p>
+                <ul>
+                    <li>Cashier's check or money order;</li>
+                    <li>Credit or debit card (via the student portal);</li>
+                    <li>Electronic bank transfer (ACH);</li>
+                    <li>Cash (in person at the Bursar's Office).</li>
+                </ul>
+
+                <h3>B. Financial Hardship Appeals</h3>
+                <p>Students experiencing documented financial hardship may submit a written appeal to the Bursar's
+                    Office with supporting documentation. Appeals will be reviewed on a case-by-case basis.</p>
+                <p>Possible outcomes may include:</p>
+                <ul>
+                    <li>Extended payment plan terms;</li>
+                    <li>Waiver or reduction of late fees (in exceptional cases);</li>
+                    <li>Temporary hold suspension to allow for registration or transcript release.</li>
+                </ul>
+
+                <h2>6. Title IV Financial Aid Implications</h2>
+                <p>Students receiving Title IV federal aid must be aware that balances owed to the College can affect
+                    future aid eligibility under 34 CFR §668.35 (Default Management).</p>
+                <ul>
+                    <li>Past-due balances must be resolved before future aid disbursements;</li>
+                    <li>Delinquent accounts may result in loss of eligibility for aid in subsequent terms;</li>
+                    <li>Return of Title IV (R2T4) regulations apply to withdrawn students with outstanding debts.</li>
+                </ul>
+
+                <h2>7. Notification Procedures</h2>
+                <p>Freedom College of Excellence will provide written notice of delinquent status via:</p>
+                <ul>
+                    <li>Email to the student's official College email address;</li>
+                    <li>Postal mail to the mailing address on file;</li>
+                    <li>Account alerts visible in the student portal.</li>
+                </ul>
+                <p>Students are responsible for regularly checking their email and student account for billing updates
+                    and notices.</p>
+
+                <h2>8. Appeal Process</h2>
+                <p>Students who believe their account has been incorrectly designated as delinquent may submit a written
+                    appeal to the Bursar's Office within 15 business days of receiving notice.</p>
+
+                <h3>Appeal Must Include:</h3>
+                <ul>
+                    <li>Written statement explaining the basis for the appeal;</li>
+                    <li>Supporting documentation (e.g., proof of payment, financial aid award letters, third-party
+                        billing agreements);</li>
+                    <li>Contact information for follow-up.</li>
+                </ul>
+
+                <h3>Resolution Timeline:</h3>
+                <p>The Bursar's Office will review appeals within 10 business days and will issue a written
+                    determination. Approved appeals will result in account correction and removal of holds. Denied
+                    appeals may be escalated to the Chief Financial Officer.</p>
+
+                <h2>Compliance References</h2>
+                <ul>
+                    <li>34 CFR §668.35 – Default Management (Title IV)</li>
+                    <li>34 CFR §668.22 – Return of Title IV Funds (R2T4)</li>
+                    <li>Fair Debt Collection Practices Act (FDCPA), 15 U.S.C. §1692</li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-deep text-white/80 border-t border-white/5 font-sans">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Academics</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="academic-policies.html">Academic
+                                Policies</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Programs & Degrees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Admissions</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors"
+                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="graduate-admissions-policy.html">Graduate</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="transfer-student-policy.html">Transfer
+                                Students</a></li>
+                        <li><a class="hover:text-gold transition-colors"
+                                href="international-admissions-policy.html">International</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
+                                Fees</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Financial Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 - Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold tracking-wider mb-6 text-sm">Stay Connected</h4>
+                    <p class="text-sm mb-4">Get the latest news and updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm focus:outline-none focus:border-gold">
+                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#050f1e] py-6">
+            <div
+                class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
+                    <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('.gsap-reveal').forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top 90%" },
+                opacity: 1, y: 0, duration: 1, ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

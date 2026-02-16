@@ -40,12 +40,23 @@
                         sans: ["Lato", "sans-serif"],
                         serif: ["Libre Baskerville", "serif"],
                         display: ["Cormorant Garamond", "serif"],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to right bottom, rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsLbXIuKQIb3reaXw4PKVQnrh7r9Ae8e4nPXkPip0Z9manY-0C7-cU_tmmRjwVJUoykHNBAIVNb06oHP6VBqYEAvT14TxwF_GhlKI5V1DTsVUgeKVAvTF6-VuBZI_gDWhrWCxfyBJoKwIWwd2kH5cHPYx6nhj86ij5Wo7Rp9x3b3axJ73w_aZSNF7m4DBjghZutIo32-Vx4Mi_tVdBqlZH8F5nQP188DcKK9f6Fq2-DY7EvsGTjlfEVFniz5F2fRfssxTEnQFLrac')",
                     }
                 },
             },
         }
     </script>
     <style>
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-shadow-lg {
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -82,6 +93,7 @@
             transform: translateY(30px);
         }
 
+        /* Policy Content Styles */
         .policy-content h2 {
             font-family: 'Libre Baskerville', serif;
             color: #0A1F44;
@@ -162,9 +174,9 @@
                         href="index.html">Home</a>
 
                     <!-- Admissions Dropdown -->
-                    <div class="group h-full flex items-center border-b-2 border-gold">
+                    <div class="group h-full flex items-center">
                         <button
-                            class="flex items-center gap-1 text-gold text-xs font-bold uppercase tracking-widest transition-colors py-10">
+                            class="flex items-center gap-1 text-navy group-hover:text-gold text-xs font-bold uppercase tracking-widest transition-colors py-10">
                             Admissions <span class="material-symbols-outlined text-sm">expand_more</span>
                         </button>
                         <div
@@ -175,16 +187,16 @@
                                         Policies</h4>
                                     <ul class="space-y-3">
                                         <li><a href="undergraduate-admissions-policy.html"
-                                                class="text-xs text-gold transition-colors uppercase tracking-widest font-bold">Undergraduate</a>
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Undergraduate</a>
                                         </li>
                                         <li><a href="graduate-admissions-policy.html"
-                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Graduate</a>
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Graduate</a>
                                         </li>
                                         <li><a href="transfer-student-policy.html"
-                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Transfer
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Transfer
                                                 Students</a></li>
                                         <li><a href="international-admissions-policy.html"
-                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">International
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">International
                                                 Students</a></li>
                                         <li><a href="high-school-college-credit-policy.html"
                                                 class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">High
@@ -195,31 +207,26 @@
                                     </ul>
                                 </div>
                                 <div class="col-span-2">
-                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">The Journey
-                                        Starts Here</h4>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Forward
+                                        Motion</h4>
                                     <div class="grid grid-cols-2 gap-8">
                                         <div class="bg-cream/50 p-6">
-                                            <span class="material-symbols-outlined text-teal mb-2">person_add</span>
-                                            <h5 class="text-navy font-bold text-sm mb-2">How to Apply</h5>
-                                            <p class="text-[11px] text-text-secondary leading-relaxed">Step-by-step
-                                                guide for Fall 2024.</p>
+                                            <span class="material-symbols-outlined text-teal mb-2">school</span>
+                                            <h5 class="text-navy font-bold text-sm mb-2">Advanced Studies</h5>
+                                            <p class="text-[11px] text-text-secondary leading-relaxed">Explore our
+                                                master's and doctoral programs.</p>
                                         </div>
                                         <div class="bg-cream/50 p-6">
-                                            <span class="material-symbols-outlined text-teal mb-2">calendar_month</span>
-                                            <h5 class="text-navy font-bold text-sm mb-2">Dates & Deadlines</h5>
-                                            <p class="text-[11px] text-text-secondary leading-relaxed">Stay updated on
-                                                scholarship deadlines.</p>
+                                            <span class="material-symbols-outlined text-teal mb-2">work</span>
+                                            <h5 class="text-navy font-bold text-sm mb-2">Professional Growth</h5>
+                                            <p class="text-[11px] text-text-secondary leading-relaxed">Tailored for
+                                                working professionals.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="relative overflow-hidden group/img">
                                     <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjSkkfMz_m-JhPCycTDdNRCfToqolUon04VZHsFFPUDrOoAVETPp41yTrRtTZulMnnqBRCvvHYAxKf-2SdBLDAZxj9PNnf13zkRE0wjFHQHPtTG3-BSc6EQe--qS-oYazxpi0dmwpqQSEGUx5OrZhWmGPOT97suUTQD3jsEnxIsWvWXoxqZf-7sTpaPFLkJXSuqF4USewy4xbGGief5dOGHQzjmAlf3H9mwlfjGW-lA8Vuv0wtpi1HmxmBKrnwaUkOkgBcT5BCrk8"
                                         class="w-full h-full object-cover grayscale transition-all group-hover/img:grayscale-0 group-hover/img:scale-110">
-                                    <div class="absolute inset-0 bg-navy/40 flex items-center justify-center">
-                                        <a href="#"
-                                            class="border border-white text-white px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-navy transition-all">Visit
-                                            Campus</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -266,6 +273,9 @@
                                 </div>
                                 <div class="col-span-2 bg-navy p-8 flex flex-col justify-center">
                                     <h4 class="font-serif text-white text-2xl mb-4 italic">Investing in Your Future</h4>
+                                    <p class="text-white/60 text-xs leading-relaxed mb-6">95% of our students receive
+                                        some form of financial assistance. We are committed to making a world-class
+                                        education accessible for all.</p>
                                     <a href="#"
                                         class="text-gold font-bold text-xs uppercase tracking-widest inline-flex items-center gap-2 hover:text-white transition-colors">Net
                                         Price Calculator <span
@@ -283,27 +293,60 @@
                         </button>
                         <div
                             class="mega-menu absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl z-40">
-                            <div class="max-w-[1400px] mx-auto px-12 py-10 grid grid-cols-3 gap-12">
+                            <div class="max-w-[1400px] mx-auto px-12 py-10 grid grid-cols-4 gap-12">
                                 <div>
                                     <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Academic
                                         Policies</h4>
                                     <ul class="space-y-2">
-                                        <li><a href="academic-policies.html"
-                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">General
-                                                Policies</a></li>
-                                        <li><a href="academic-requirements.html"
-                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">Degree
+                                        <li><a href="grievance-policy.html"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Grievance
+                                                Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Requirements
+                                    </h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Degree
                                                 Requirements</a></li>
-                                        <li><a href="college-info.html"
-                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest font-bold">College
-                                                Information</a></li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">General
+                                                Education</a></li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Language
+                                                Proficiency</a></li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Graduation
+                                                Rules</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-navy text-lg border-b border-gold pb-2 mb-4">Programs
+                                    </h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Undergraduate</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Graduate</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Internships</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Academic
+                                                Calendar</a></li>
                                     </ul>
                                 </div>
                                 <div class="bg-teal p-8 flex flex-col justify-center">
                                     <span class="material-symbols-outlined text-white text-4xl mb-4">auto_stories</span>
+                                    <h5 class="text-white font-serif text-lg mb-2 italic">Student Catalog</h5>
+                                    <p class="text-white/80 text-[11px] leading-relaxed mb-4">Download the latest
+                                        academic handbook for 2024-2025.</p>
                                     <a href="#"
                                         class="text-white font-bold text-[10px] uppercase tracking-widest border border-white/50 px-4 py-2 hover:bg-white hover:text-teal transition-all text-center">Download
-                                        PDF Catalog</a>
+                                        PDF</a>
                                 </div>
                             </div>
                         </div>
@@ -326,9 +369,24 @@
                                                 class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Leadership
                                                 & Board</a></li>
                                         <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">College
+                                                Personnel</a></li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Departments</a>
+                                        </li>
+                                        <li><a href="#"
                                                 class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">Non-Discrimination</a>
                                         </li>
+                                        <li><a href="#"
+                                                class="text-xs text-text-secondary hover:text-gold transition-colors uppercase tracking-widest">FERPA
+                                                Compliance</a></li>
                                     </ul>
+                                </div>
+                                <div class="bg-cream p-6 flex flex-col justify-center">
+                                    <h5 class="text-navy font-bold text-sm mb-2">Our Mission</h5>
+                                    <p
+                                        class="text-[10px] text-text-secondary leading-relaxed italic border-l-2 border-gold pl-3">
+                                        To empower leaders through intellectual freedom and academic rigor.</p>
                                 </div>
                             </div>
                         </div>
@@ -344,10 +402,13 @@
                         Request Info
                     </a>
                     <a class="bg-gold hover:bg-gold-light text-navy px-6 py-2.5 text-xs font-bold uppercase tracking-widest shadow-md hover:shadow-lg transition-all duration-300"
-                        href="undergraduate-admissions-policy.html">
+                        href="#">
                         Apply Now
                     </a>
                 </div>
+                <button class="xl:hidden text-navy">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
             </div>
         </div>
     </header>
@@ -373,13 +434,25 @@
                             </a>
                             <a href="transfer-student-policy.html"
                                 class="flex items-center justify-between group p-3 bg-white text-text-secondary hover:bg-cream transition-all border border-gray-100">
-                                <span class="text-xs font-bold uppercase tracking-widest">Transfer</span>
+                                <span class="text-xs font-bold uppercase tracking-widest">Transfer Students</span>
                                 <span
                                     class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
                             </a>
                             <a href="international-admissions-policy.html"
                                 class="flex items-center justify-between group p-3 bg-white text-text-secondary hover:bg-cream transition-all border border-gray-100">
                                 <span class="text-xs font-bold uppercase tracking-widest">International</span>
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+                            </a>
+                            <a href="high-school-college-credit-policy.html"
+                                class="flex items-center justify-between group p-3 bg-white text-text-secondary hover:bg-cream transition-all border border-gray-100">
+                                <span class="text-xs font-bold uppercase tracking-widest">High School Credits</span>
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+                            </a>
+                            <a href="readmission-policy.html"
+                                class="flex items-center justify-between group p-3 bg-white text-text-secondary hover:bg-cream transition-all border border-gray-100">
+                                <span class="text-xs font-bold uppercase tracking-widest">Readmission</span>
                                 <span
                                     class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
                             </a>
@@ -520,50 +593,65 @@
                         </div>
                     </div>
                     <p class="text-sm leading-relaxed text-white/60">
-                        123 Freedom Way, Liberty City, ST 12345<br />
+                        123 Freedom Way<br />
+                        Liberty City, ST 12345<br />
                         (555) 123-4567
                     </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-serif text-lg mb-6">Policies</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a class="hover:text-gold transition-colors"
-                                href="undergraduate-admissions-policy.html">Undergraduate</a></li>
-                        <li><a class="hover:text-gold transition-colors"
-                                href="graduate-admissions-policy.html">Graduate</a></li>
-                        <li><a class="hover:text-gold transition-colors"
-                                href="international-admissions-policy.html">International</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-serif text-lg mb-6">Quick Links</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a class="hover:text-gold transition-colors" href="#">Apply Now</a></li>
-                        <li><a class="hover:text-gold transition-colors" href="tuition-and-fees-policy.html">Tuition &
-                                Fees</a></li>
-                        <li><a class="hover:text-gold transition-colors" href="withdrawal-policy.html">Withdrawal</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white/5 p-6 border border-white/10">
-                    <h4 class="text-white font-serif text-lg mb-4">Newsletter</h4>
-                    <p class="text-xs text-white/40 mb-4">Stay informed about admissions cycles.</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Email"
-                            class="bg-navy-deep border border-white/20 text-white px-3 py-2 text-xs w-full focus:outline-none focus:border-gold">
-                        <button class="bg-gold text-navy px-4 font-bold text-xs uppercase">Join</button>
+                    <div class="flex gap-4">
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#"><i
+                                class="fa-brands fa-twitter"></i> Twitter</a>
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">LinkedIn</a>
+                        <a class="text-white/60 hover:text-gold transition-colors" href="#">Instagram</a>
                     </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Academics</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Undergraduate Programs</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Graduate &amp; Professional</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Academic Calendar</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Library</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Registrar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Admissions</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Apply for Admission</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Tuition &amp; Aid</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Visit Campus</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Virtual Tour</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Request Info</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-serif text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-gold transition-colors" href="#">Careers at FCoE</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Campus Safety</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">News &amp; Media</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Alumni Association</a></li>
+                        <li><a class="hover:text-gold transition-colors" href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="bg-[#050f1e] py-6">
             <div
                 class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
-                <p>© 2024 Freedom College of Excellence.</p>
+                <p>© 2024 Freedom College of Excellence. All Rights Reserved.</p>
                 <div class="flex gap-8">
-                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-                    <a class="hover:text-white transition-colors" href="#">Nondiscrimination</a>
+                    <a class="hover:text-white transition-colors" href="academic-policies.html">Policies</a>
+                    <a class="hover:text-white transition-colors" href="ferpa-policy.html">FERPA</a>
+                    <a class="hover:text-white transition-colors"
+                        href="non-discrimination-policy.html">Non-Discrimination</a>
                     <a class="hover:text-white transition-colors" href="#">Title IX</a>
+                    <a class="hover:text-white transition-colors" href="grievance-policy.html">Grievance</a>
+                    <a class="hover:text-white transition-colors" href="tuition-and-fees-policy.html">Tuition & Fees</a>
+                    <a class="hover:text-white transition-colors" href="refund-adjustment-policy.html">Refunds</a>
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                    <a class="hover:text-white transition-colors" href="#">Contact</a>
                 </div>
             </div>
         </div>
@@ -571,6 +659,19 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+
+        // Header Scroll Effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-0', 'shadow-lg');
+                header.querySelector('.h-24').classList.replace('h-24', 'h-20');
+            } else {
+                header.classList.remove('py-0', 'shadow-lg');
+                header.querySelector('.h-20')?.classList.replace('h-20', 'h-24');
+            }
+        });
+
         document.querySelectorAll('.gsap-reveal').forEach((el) => {
             gsap.to(el, {
                 scrollTrigger: { trigger: el, start: "top 90%" },
