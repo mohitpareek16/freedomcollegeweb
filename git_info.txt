@@ -1,0 +1,60 @@
+e0e38bb Standardized Admissions pages
+a797729 Initial commit - Freedom College Website
+origin	https://github.com/mohitpareek16/freedomcollegeweb.git (fetch)
+origin	https://github.com/mohitpareek16/freedomcollegeweb.git (push)
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   academic-advising-policy.html
+	modified:   academic-calendar-policy.html
+	modified:   academic-integrity-policy.html
+	modified:   academic-policies.html
+	modified:   academic-requirements.html
+	modified:   academic-status.html
+	modified:   accreditation.html
+	modified:   add-drop-policy.html
+	modified:   attendance-policy.html
+	modified:   campus-locations.html
+	modified:   college-info.html
+	modified:   contact-information.html
+	modified:   course-numbering-system.html
+	modified:   course-registration-policy.html
+	modified:   credit-hour-policy.html
+	modified:   degree-requirements.html
+	modified:   delinquent-accounts-policy.html
+	modified:   federal-state-aid.html
+	modified:   general-education-requirements.html
+	modified:   grading-policy.html
+	modified:   graduate-admissions-policy.html
+	modified:   graduate.html
+	modified:   graduation-requirements.html
+	modified:   grievance-policy.html
+	modified:   high-school-college-credit-policy.html
+	modified:   index.html
+	modified:   international-admissions-policy.html
+	modified:   major-minor-requirements.html
+	modified:   non-discrimination-policy.html
+	modified:   payment-plan-policy.html
+	modified:   prerequisite-policy.html
+	modified:   readmission-policy.html
+	modified:   refund-adjustment-policy.html
+	modified:   residency-requirements.html
+	modified:   satisfactory-academic-progress-policy.html
+	modified:   scholarships-merit-based-awards.html
+	modified:   transfer-credit-policy.html
+	modified:   transfer-student-policy.html
+	modified:   transfer.html
+	modified:   tuition-and-fees-policy.html
+	modified:   under.html
+	modified:   undergraduate-admissions-policy.html
+	modified:   withdrawal-policy.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_info.txt
+	notice.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
